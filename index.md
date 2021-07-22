@@ -15,6 +15,12 @@ Syntax highlighted code block
 ## Header 2
 ### Header 3
 
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
 - Bulleted
 - List
 
