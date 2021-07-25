@@ -1,0 +1,181 @@
+<!doctype html>
+<!-- https://bootsnipp.com/snippets/8G2Q -->
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+  <title>Code-recommender - replication package</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/">
+
+  <!-- jquery -->
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+  <!-- bootstrap 5.0.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+
+  <!-- Custom style and js for this page -->
+  <link href="css/tag.css" rel="stylesheet">
+  
+
+  <!-- Bootstrap table extension -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.18.3/bootstrap-table.min.js"></script>
+
+  
+
+
+
+
+
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <header>
+
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Fixed navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="survey1.html">Survey1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tag.html">Tags</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="task.html">Tasks</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  </header>
+
+  <main class="flex-shrink-0">
+
+
+    <div class="container">
+
+      <div class="row">
+        <div class="panel panel-primary filterable">
+          <div class="panel-heading">
+            <h3 class="panel-title">Answers</h3>
+            <div class="pull-right">
+              <button class="btn btn-default btn-xs btn-filter">
+                Filter</button>
+            </div>
+          </div>
+          <table class="table" id="export">
+            <thead>
+              <tr class="filters">
+                <th width="10%;"><input type="text" class="form-control" placeholder="Round" disabled></th>
+                <th width="55%;"><input type="text" class="form-control" placeholder="Answer" disabled></th>
+                <th width="35%;"><input type="text" class="form-control" placeholder="Tags" disabled></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>The correctness is the most important thing that matters to me when I am coding, there are similar
+                  strings that can accomplish similar tasks and I want to make sure that I am using the correct one for
+                  the situation.
+
+                  The next most important thing to me when it comes to using an IDE Is that it understands the context I
+                  am working in, like when I work with Splunk and it is able to pull from the API to allow me to get
+                  more accurate commands to work with the software.
+
+                  The third most important thing for me with an IDE is when it has syntax highlighting. This allows me
+                  to make sure that I am being accurate and matching syntax.</td>
+                <td>
+                  <ul>
+                    <li>Accuracy of recommendations</li>
+                    <li> Awareness -> Coding context </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>
+                  Correctness would be the most important, as inaccurate recommendations would create more work than
+                  manually writing the code. Context-sensitivity is also important. I would like practical and stylistic
+                  compatibility with the existing code. Also important would be ease-of-use. It needs to be very clear
+                  what the recommended code is, what (if anything) still needs to be manually edited (variable names,
+                  constants, etc.), and how to accept or cycle through recommendation options. While typing manually,
+                  the recommendations shouldn't be too intrusive unless interacted with.
+                </td>
+                <td>
+                  <ul>
+                    <li>Accuracy of recommendations</li>
+                    <li> Awareness -> Coding context </li>
+                    <li> Usability -> Non-invasive </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Adapted to the context
+                  Customizable (e.g. generation of a for loop structure in intellij with "fori")
+                  adhering to best practices
+                  adhering to custom coding style rules or convetions
+                  simple and radable
+                </td>
+                <td>
+                  <ul>
+                    <li>Characteristics of recommended code -> Adaptive -> Coding context</li>
+                    <li> Characteristics of recommended code -> Code Quality -> Meets best coding practices </li>
+                    <li> Characteristics of recommended code -> Adaptive -> Developer's coding style </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+  </footer>
+
+  
+  <script type="text/javascript">
+    $('#export').DataTable({
+          dom: 'Blfrtip',
+          searching: false, paging: false, info: false,
+  buttons: [ 'excel', 'pdf', 'csv', 'copy' ]
+});</script>
+<script src="js/tag.js"></script>
+
+</body>
+
+</html>

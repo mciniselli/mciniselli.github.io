@@ -1,0 +1,76 @@
+/* move the arrows outside the area */
+  #carouselExampleCaptions {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    background: none;
+    color: "red";
+    border: none;
+  }
+
+  .carousel-control-prev {
+    margin-left: -150px;
+    color: "black";
+  }
+
+  .carousel-control-next {
+    margin-right: -150px;
+    color: "black";
+  }
+
+  /* set the height of the carousel */
+
+  .carousel-item {
+    height: 400px;
+  }
+
+  .inner{
+      height: 400px;
+  }
+/* arrow customization */
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: none;
+  }
+
+  .carousel-control-next-icon:after {
+    content: '>';
+    font-size: 55px;
+    color: red;
+  }
+
+  .carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: red;
+  }
+
+  span.bold-red {
+    color: red;
+    font-weight: bold;
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+  /* test commands */
+/*
+
+  body {
+    background-color: #ddd;
+  }  
+  div {
+    outline: 1px solid red;
+  }
+  */
