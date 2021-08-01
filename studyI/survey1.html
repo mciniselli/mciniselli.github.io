@@ -1,0 +1,1088 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+  <title>Code-recommender - replication package</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/">
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+  <!-- bootstrap 5.0.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="../css/sticky-footer-navbar.css" rel="stylesheet">
+
+
+  <link href="../css/survey1.css" rel="stylesheet">
+
+
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Study I
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="study1.html">Study I</a></li>
+                <li><a class="dropdown-item" href="literaturesurvey1.html">Characteristics from Literature</a></li>
+                <li><a class="dropdown-item" href="survey1.html">Survey I</a></li>
+                <li><a class="dropdown-item" href="taxonomy.html">Taxonomy</a></li>
+                <li><a class="dropdown-item" href="tag.html">Tags</a></li>
+                <li><a class="dropdown-item" href="demographic.html">Demographic Information</a></li>
+
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Study II
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="../studyII/study2.html">Study II</a></li>
+                <li><a class="dropdown-item" href="../studyII/survey2.html">Survey II</a></li>
+                <li><a class="dropdown-item" href="../studyII/task.html">Tasks</a></li>
+              </ul>
+            </li>
+
+          </ul>
+          <!--
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>-->
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- Begin page content -->
+  <main class="flex-shrink-0">
+    <div class="container">
+
+      <div class="mx-0 mx-sm-auto">
+        <div class="card">
+          <div class="card-body">
+            <div id="form">
+
+              <!-- <h1 class="mt-5 text-center survey-title">Study I: Relevant characteristics of code recommenders</h1> -->
+
+              <h1 class="mt-1 text-center">Study I: the Survey for the Participants</h1>
+
+
+              <p class="text-left mt-5">
+                Thanks for taking part in this <b>anonymous survey</b>. Our goal is to understand the characteristics of
+                source code recommender systems that are important for developers. </br> With <b>source code recommender
+                  systems</b>, we refer to approaches that can be used to automatically suggest code to developers while
+                they are writing code. </br>The classic example in this context is the code completion feature
+                implemented in several IDEs. However, some tools go beyond the classic code completion task and
+                recommend longer pieces of code to developers to autocomplete a task they perform (see, e.g.,
+                <a href="https://vimeo.com/412328071" target="_blank">https://vimeo.com/412328071</a>).
+                </br></br>In the following, we use the term "code completion" to refer both to standard code completion
+                tools as well as to more advanced tools recently proposed. Also, we use the term "recommended code to
+                refer to the code automatically generated by the code completion tool. The survey is designed to take no
+                more than <b>10 minutes</b>.
+              </p>
+
+              <hr />
+
+            </div>
+
+
+            <form class="px-4" action="" id="form">
+
+              <!-- 
+
+                QUESTION 1
+
+              -->
+              <div class="question mt-2">
+
+
+                <p class="title"><strong>Q1: which role better describes your current job position</strong>
+                </p>
+
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
+                  <label class="form-check-label" for="radioExample1">
+                    Architect
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample2" />
+                  <label class="form-check-label" for="radioExample2">
+                    Developer
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample3" />
+                  <label class="form-check-label" for="radioExample3">
+                    Tester
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample4" />
+                  <label class="form-check-label" for="radioExample4">
+                    Group leader
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample5" />
+                  <label class="form-check-label" for="radioExample5">
+                    Engineer
+                  </label>
+                </div>
+
+
+                <div class="input-group">
+                  <span class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample5" />
+                    <label class="form-check-label" for="radioExample5">
+                      Other (comma separated)
+                    </label>
+                  </span>
+                  <span class="form-box"><input type="text" class="form-control" aria-label="..."></span>
+                </div>
+
+              </div>
+              <hr />
+
+              <!-- 
+
+                QUESTION 2
+
+              -->
+              <div class="question">
+
+                <p class="title"><strong>Q2: How many years of experience do you have?</strong></p>
+
+
+                <!-- cool slider: https://codepen.io/mayuMPH/pen/ZjxGEY -->
+                <input type="range" class="form-range" min="0" max="40" step="1" id="rangeYears">
+
+                <div class="box-minmax">
+                  <span>0</span><span>40</span>
+                </div>
+
+              </div>
+
+              <hr />
+
+              <!-- 
+
+                QUESTION 3
+
+              -->
+
+
+              <div class="question">
+
+                <p class="title"><strong>Q3: Which programming language(s) do you mostly use?</strong></p>
+
+
+                <table class="table" id="programmingLanguages">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
+                          <label class="form-check-label" for="Q31">
+                            Go
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
+                          <label class="form-check-label" for="Q32">
+                            Ktolin
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+
+                      <td>
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
+                          <label class="form-check-label" for="Q33">
+                            Ruby
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
+                          <label class="form-check-label" for="Q34">
+                            PHP
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+
+                      <td>
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
+                          <label class="form-check-label" for="Q35">
+                            C++
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
+                          <label class="form-check-label" for="Q36">
+                            C#
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+
+                      <td>
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
+                          <label class="form-check-label" for="Q37">
+                            Visual Basic
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
+                          <label class="form-check-label" for="Q38">
+                            Python
+                          </label>
+                        </div>
+                      </td>
+
+                    </tr>
+                    <tr>
+
+
+                      <td>
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
+                          <label class="form-check-label" for="Q39">
+                            C
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
+                          <label class="form-check-label" for="Q310">
+                            Java
+                          </label>
+                        </div>
+                      </td>
+
+                    </tr>
+                    <tr>
+
+                      <td>
+
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
+                          <label class="form-check-label" for="Q311">
+                            Cobol
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
+                          <label class="form-check-label" for="Q312">
+                            R
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+
+                      <td>
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
+                          <label class="form-check-label" for="Q313">
+                            JavaScript
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+
+                        <div class="input-group">
+                          <span class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
+                            <label class="form-check-label" for="Q314">
+                              Other (comma separated)
+                            </label>
+                          </span>
+                          <span class="form-box"><input type="text" class="form-control" aria-label="..."></span>
+                        </div>
+
+
+
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+
+              <!-- this question is not present in the results
+              <hr />
+
+              <p class="title"><strong>Q4: Which IDE do you mostly use?</strong></p>
+
+
+              <table class="table" id="IDEs">
+                <tbody>
+                  <tr>
+                    <td>
+                      <p class="text-left">
+                        <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
+                        <label class="form-check-label" for="radioExample1">
+                          Eclipse
+                        </label>
+                      </p>
+                    </td>
+                    <td>
+                      <p class="text-left">
+                        <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
+                        <label class="form-check-label" for="radioExample1">
+                          IntelliJ IDEA
+                        </label>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+
+                    <td>
+                      <p class="text-left">
+                        <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
+                        <label class="form-check-label" for="radioExample1">
+                          CLion
+                        </label>
+                      </p>
+                    </td>
+                    <td>
+                      <p class="text-left">
+                        <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
+                        <label class="form-check-label" for="radioExample1">
+                          PyCharm
+                        </label>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+
+                    <td>
+                      <p class="text-left">
+                        <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
+                        <label class="form-check-label" for="radioExample1">
+                          VSCode
+                        </label>
+                      </p>
+                    </td>
+                    <td>
+                      <p class="text-left">
+                        <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
+                        <label class="form-check-label" for="radioExample1">
+                          NetBeans
+                        </label>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+
+                    <td>
+                      <p class="text-left">
+                        <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
+                        <label class="form-check-label" for="radioExample1">
+                          IDLE
+                        </label>
+                      </p>
+                    </td>
+                    <td>
+                      <p class="text-left">
+                        <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
+                        <label class="form-check-label" for="radioExample1">
+                          XCode
+                        </label>
+                      </p>
+                    </td>
+
+                  </tr>
+                  <tr>
+
+
+                    <td>
+                      <p class="text-left">
+                        <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
+                        <label class="form-check-label" for="radioExample1">
+                          WebStorm
+                        </label>
+                      </p>
+                    </td>
+                    <td>
+                      <p class="text-left">
+                        <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
+                        <label class="form-check-label" for="radioExample1">
+                          Visual Studio
+                        </label>
+                      </p>
+                    </td>
+
+                  </tr>
+
+
+                  <td>
+                    <p class="text-left">
+                      <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
+                      <label class="form-check-label" for="radioExample1">
+                        PhpStorm
+                      </label>
+                    </p>
+                  </td>
+                  <td>
+
+                    <p class="text-left">
+                      <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
+                      <label class="form-check-label" for="radioExample1">
+                        Other (comma separated)
+                      </label>
+                    </p>
+
+                    <p class="text-left">
+                      <input type="text" class="form-control" aria-label="...">
+
+                    </p>
+
+
+
+                  </td>
+                  </tr>
+                </tbody>
+              </table>
+
+            -->
+
+              <hr />
+
+              <!-- 
+
+                QUESTION 4
+
+              -->
+              <div class="question">
+                <p class="title"><strong>Q4: which tool(s) or plugin(s) do you use to get code
+                    recommendations?</strong></p>
+
+
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="toolplugin" />
+                  <label class="form-check-label" for="Q41">
+                    The default one in the IDE
+                  </label>
+                </div>
+
+
+                <div class="input-group">
+                  <span class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="exampleForm" id="toolplugin" />
+                    <label class="form-check-label" for="Q41">
+                      IDE's plugins (Type the plugin list separated by a comma)
+                    </label>
+                  </span>
+                  <span class="form-box"><input type="text" class="form-control" aria-label="..."></span>
+                </div>
+
+                <div class="input-group">
+                  <span class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="exampleForm" id="toolplugin" />
+                    <label class="form-check-label" for="Q42">
+                      Other tools (Type the names of the tools separated by a comma)
+                    </label>
+                  </span>
+                  <span class="form-box"><input type="text" class="form-control" aria-label="..."></span>
+                </div>
+
+                <div class="input-group">
+                  <span class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="exampleForm" id="toolplugin" />
+                    <label class="form-check-label" for="Q43">
+                      Both IDE's plugins and tools (Type the list separated by a comma)
+                    </label>
+                  </span>
+                  <span class="form-box"><input type="text" class="form-control" aria-label="..."></span>
+                </div>
+
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="toolplugin" />
+                  <label class="form-check-label" for="Q44">
+                    I do not use code recommender systems (Quit the survey)
+                  </label>
+                </div>
+              </div>
+
+
+              <hr />
+
+              <!-- 
+
+                QUESTION 5
+
+              -->
+              <div class="question">
+                <p class="title"><strong>Q5: when typing code, how often do you exploit code
+                    recommendations?</strong></p>
+
+
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="explot" />
+                  <label class="form-check-label" for="Q51">
+                    Always (i.e., every time a recommendation is available I check it)
+                  </label>
+                </div>
+
+
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="explot" />
+                  <label class="form-check-label" for="Q52">
+                    Most of times (i.e., more than 50% of times a recommendation is available I check it)
+                  </label>
+                </div>
+
+
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="explot" />
+                  <label class="form-check-label" for="Q53">
+                    Occasionally (i.e., less than 50% of times a recommendation is available, I check it)
+                  </label>
+                </div>
+
+                <div class="input-group">
+                  <span class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="explot" />
+                    <label class="form-check-label" for="Q54">
+                      Depends (please explain)
+                    </label>
+                  </span>
+                  <span class="form-box"><input type="text" class="form-control" aria-label="..."></span>
+                </div>
+              </div>
+
+              <hr />
+
+              <!-- 
+
+                QUESTION 6
+
+              -->
+              <div class="question">
+
+                <p class="title"><strong>Q6: What kind of "code tokens" do you use to trigger code
+                    recommenders?</strong></p>
+
+
+                <table class="table" id="IDEs">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" />
+                          <label class="form-check-label" for="Q61">
+                            Import/Includes
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" />
+                          <label class="form-check-label" for="Q62">
+                            Language keywords
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+
+                      <td>
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" />
+                          <label class="form-check-label" for="Q63">
+                            Generating templates for loops/conditions
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" />
+                          <label class="form-check-label" for="Q64">
+                            Method/Function invocations
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+
+                      <td>
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" />
+                          <label class="form-check-label" for="Q65">
+                            Generating class methods (setter/getter)
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" />
+                          <label class="form-check-label" for="Q66">
+                            Generating class methods (to comply with an interaface)
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+
+                      <td>
+                        <div class="text-left">
+
+                          <input class="form-check-input" type="checkbox" name="exampleForm" />
+                          <label class="form-check-label" for="Q67">
+                            Identifiers (e.g., variable/field/parameter/method names)
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" />
+                          <label class="form-check-label" for="Q68">
+                            Searching APIs
+                          </label>
+                        </div>
+                      </td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td>
+                        <div class="text-left">
+                          <input class="form-check-input" type="checkbox" name="exampleForm" />
+                          <label class="form-check-label" for="Q69">
+                            Generating template methods/functions
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+
+                        <p class="input-group">
+                          <span class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" name="exampleForm" />
+                            <label class="form-check-label" for="Q610">
+                              Other (comma separated)
+                            </label>
+                          </span>
+                          <span class="form-box"><input type="text" class="form-control" aria-label="..."></span>
+                        </p>
+
+
+
+                      </td>
+                    </tr>
+
+
+                  </tbody>
+                </table>
+
+              </div>
+
+
+              <hr />
+
+              <!-- 
+
+                QUESTION 7
+
+              -->
+              <div class="question">
+
+                <p class="title"><strong>Q7: Please rate the code recommender capabilities of the tools/IDEs
+                    you use
+                    accordingly to the following dimensions:</strong></p>
+
+                <table class="table" id="capabilities">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col" style="width: 100px;">Low </th>
+                      <th scope="col" style="width: 100px;">Medium</th>
+                      <th scope="col" style="width: 100px;">High </th>
+                      <th scope="col" style="width: 100px;">Not Sure</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="description"><b>Coverage of the recommendation</b>: how different are the coding scenarios in which the
+                        code
+                        recommender is able to provide support. For example, a code completion tool able to recommend
+                        variable names and method calls has a higher coverage as compared to a technique only able to
+                        recommend method calls.</td>
+                      <td>
+                          <input class="form-check-input" type="radio" name="coverage" />
+                      </td>
+                      <td>
+                          <input class="form-check-input" type="radio" name="coverage" />
+                      </td>
+                      <td>
+                          <input class="form-check-input" type="radio" name="coverage" />
+                      </td>
+                      <td>
+                          <input class="form-check-input" type="radio" name="coverage" />
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="description"><b>Accuracy of the recommendation</b>: how likely it is that the code recommended is correct.
+                      </td>
+                      <td>
+                          <input class="form-check-input" type="radio" name="accuracy" />
+                      </td>
+                      <td>
+                          <input class="form-check-input" type="radio" name="accuracy" />
+                      </td>
+                      <td>
+                          <input class="form-check-input" type="radio" name="accuracy" />
+                      </td>
+                      <td>
+                          <input class="form-check-input" type="radio" name="accuracy" />
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="description"><b>Usability of the recommendation</b>: how friendly the user interface is.</td>
+                      <td>
+                          <input class="form-check-input" type="radio" name="usability" />
+                      </td>
+                      <td>
+                          <input class="form-check-input" type="radio" name="usability" />
+                      </td>
+                      <td>
+                          <input class="form-check-input" type="radio" name="usability" />
+                      </td>
+                      <td>
+                          <input class="form-check-input" type="radio" name="usability" />
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+
+              </div>
+
+              <hr />
+
+              <!-- 
+
+                QUESTION 8
+
+              -->
+              <div class="question">
+
+                <p class="title"><strong>Q8: concerning the three previous dimensions, what
+                    <b>improvements</b> would you like to see, such as code recommendation features of the
+                    tool/IDE?</strong></p>
+
+                <p class="text-left">
+                  <b>Coverage of the recommendation</b>: how different are the coding scenarios in which the code
+                  recommender is able to provide support. For example, a code completion tool able to recommend
+                  variable names and method calls has a higher coverage as compared to a technique only able to
+                  recommend method calls.
+                </p>
+
+                <p class="text-left">
+                  <input type="text" class="form-control fullsize" aria-label="...">
+
+                </p>
+                <div class="margintop"></div>
+                <p class="text-left">
+                  <b>Accuracy of the recommendation</b>: how likely it is that the code recommended is correct.
+                </p>
+
+                <p class="text-left">
+                  <input type="text" class="form-control fullsize" aria-label="...">
+
+                </p>
+                <div class="margintop"></div>
+
+                <p class="text-left">
+                  <b>Usability of the recommendation</b>: how friendly the user interface is.
+                </p>
+
+                <p class="text-left">
+                  <input type="text" class="form-control fullsize" aria-label="...">
+
+                </p>
+
+                </hr>
+
+              </div>
+
+              <hr />
+
+              <!-- 
+
+                QUESTION 9
+
+              -->
+              <div class="question">
+
+                <p class="title"><strong>Q9: Which are the most important characteristics of the code
+                    recommendation that strongly impact its usefulness (and, as a consequence, the likelihood that you
+                    will accept and use the recommendation)? </strong></br>Please list at least three of them sorted by
+                  importance,
+                  accompanying each one with a short explanation. Just a note: Use "Correctness" if you want to refer
+                  to
+                  the fact that the recommended code must be bug-free, use "Accuracy" if you want to indicate that the
+                  recommendations received are usually precise and match what the developer wants to write.
+                </p>
+
+                <p class="text-left">
+                  <input type="text" class="form-control fullsize" aria-label="...">
+
+                </p>
+
+              </div>
+
+              <hr />
+
+              <!-- 
+
+                QUESTION 10
+
+              -->
+              <div class="question">
+
+                <p class="title"><strong>Q10: Concerning the accuracy of the recommendation. Let’s assume
+                    that
+                    the code recommender tool you use provides &mdash; for the code you are writing &mdash; a list of
+                    possible
+                    recommendations sorted by likelihood of being relevant (i.e., the most relevant on top). How many of
+                    these recommendations would you be willing to read in order to find the right one?</strong></br>
+                  For example, TOP 3 means that the correct recommendation is within these three recommendations.
+                  Otherwise, you believe it’s faster just manually to type the code.
+                </p>
+
+
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="topk" />
+                  <label class="form-check-label" for="tp1">
+                    TOP 1
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="topk" />
+                  <label class="form-check-label" for="tp1">
+                    TOP 3
+                  </label>
+                </div>
+
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="topk" />
+                  <label class="form-check-label" for="tp1">
+                    TOP 5
+                  </label>
+                </div>
+
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="topk" />
+                  <label class="form-check-label" for="tp1">
+                    TOP 10
+                  </label>
+                </div>
+
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="topk" />
+                  <label class="form-check-label" for="tp1">
+                    Every item in the list
+                  </label>
+                </div>
+
+              </div>
+
+              <hr />
+
+              <!-- 
+
+                QUESTION 11
+
+              -->
+              <div class="question">
+
+                <p class="title"><strong>Q11: Which of the following characteristics of a code
+                    recommendation
+                    would strongly impact its usefulness (and, as a consequence, the likelihood that you will accept and
+                    use the recommendation)? Select the most relevant categories for you.
+                  </strong>
+
+
+
+
+                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
+                    id="checkbox_characteristics" /> <label class="form-check-label"
+                    for="Q111"><strong>Characteristics of recommended code &gt; Code quality &gt; High
+                      readability
+                      and understandability &gt; Concise Code </strong><br /> The recommended code must be as short and
+                    simple as possible. </label> </div>
+                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
+                    id="checkbox_characteristics" /> <label class="form-check-label"
+                    for="Q112"><strong>Characteristics of recommended code &gt; Code quality &gt; Correctness
+                    </strong><br /> The recommended code must be bug-free. </label> </div>
+                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
+                    id="checkbox_characteristics" /> <label class="form-check-label"
+                    for="Q1114"><strong>Awareness
+                      &gt; Developers' knowledge </strong><br /> If multiple recommendations are possible, the one using
+                    code that is more familiar to the developer must be used (\eg the code using APIs already used in
+                    the
+                    past by the developer receiving the recommendation). </label> </div>
+                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
+                    id="checkbox_characteristics" /> <label class="form-check-label"
+                    for="Q113"><strong>Characteristics of recommended code &gt; Code quality &gt; High
+                      readability
+                      and understandability </strong><br /> The recommended code must be readable (\eg avoid very long
+                    statements, adopt indentation) and easy to understand.</label> </div>
+                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
+                    id="checkbox_characteristics" /> <label class="form-check-label"
+                    for="Q114"><strong>Characteristics of recommended code &gt; Code quality &gt; High
+                      reusability
+                    </strong><br />The recommended code is easy to reuse. This is particularly relevant for recommender
+                    systems suggesting code components at higher granularity (e.g., entire methods)</label> </div>
+                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
+                    id="checkbox_characteristics" /> <label class="form-check-label"
+                    for="Q115"><strong>Characteristics of recommended code &gt; Provides additional information
+                      &gt;
+                      Documentation &gt; Commented code </strong><br /> The recommended code features comments
+                    documenting
+                    the statements. </label> </div>
+                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
+                    id="checkbox_characteristics" /> <label class="form-check-label"
+                    for="Q116"><strong>Characteristics of recommended code &gt; Adaptive &gt; Developer's
+                      coding
+                      style </strong><br /> The recommended code is adapted to the developer's coding style (e.g., using
+                    extra parenthesis to better format code if this is a practice frequently performed by the
+                    developer).</label> </div>
+                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
+                    id="checkbox_characteristics" /> <label class="form-check-label"
+                    for="Q117"><strong>Characteristics of recommended code &gt; Code quality &gt; Meets best
+                      coding
+                      practices &gt; Meets company/client standards </strong><br /> The recommended code can be
+                    configured
+                    to meet specific best coding practices defined by the company/client (e.g., if variables are named
+                    with camelCase, the same convention must be adopted in the recommended code).</label> </div>
+                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
+                    id="checkbox_characteristics" /> <label class="form-check-label"
+                    for="Q118"><strong>Characteristics of recommended code &gt; Structural characteristics &gt;
+                      Precise typing information </strong><br /> The recommended code can be configured to meet specific
+                    best coding practices defined by the company/client (e.g., if variables are named with camelCase,
+                    the
+                    same convention must be adopted in the recommended code).</label> </div>
+                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
+                    id="checkbox_characteristics" /> <label class="form-check-label"
+                    for="Q119"><strong>Usability
+                      &gt; High responsiveness </strong><br /> The responsiveness of the code recommendation system in
+                    terms
+                    of time needed to generate a recommendation. The recommender is responsive, not causing lagging
+                    while
+                    coding.</label> </div>
+                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
+                    id="checkbox_characteristics" /> <label class="form-check-label"
+                    for="Q1010"><strong>Characteristics of recommended code &gt; Adaptive &gt; Coding context
+                      &gt;
+                      Identifier names </strong><br /> The recommended code is adapted to the context of the
+                    recommendation by using the same variable names of the code it completes when possible.</label>
+                </div>
+                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
+                    id="checkbox_characteristics" /> <label class="form-check-label"
+                    for="Q1111"><strong>Characteristics of recommended code &gt; Code quality &gt; Correctness
+                      &gt;
+                      Correct syntax </strong><br /> The recommended must not introduce syntax errors.</label> </div>
+                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
+                    id="checkbox_characteristics" /> <label class="form-check-label"
+                    for="Q1112"><strong>Characteristics of recommended code &gt; Code quality &gt; High
+                      readability
+                      and understandability &gt; Step-by-step solution </strong><br /> In case the recommended code
+                    spans
+                    across many statements, the code is divided into multiple chunks (by using a blank line), each one
+                    responsible for a sub-task. </label> </div>
+                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
+                    id="checkbox_characteristics" /> <label class="form-check-label"
+                    for="Q1113"><strong>Characteristics of recommended code &gt; Code quality &gt; Correctness
+                      &gt;
+                      Bug/Vulnerability free </strong><br /> The recommended code is does not introduce bugs and/or
+                    vulnerabilities. </label> </div>
+
+                </p>
+
+
+            </form>
+          </div>
+          <!--<div class="card-footer text-end">
+      <button type="button" class="btn btn-primary">Submit</button>
+    </div>-->
+        </div>
+      </div>
+
+
+    </div>
+  </main>
+
+
+
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+  </footer>
+
+  <script src="../js/survey1.js"></script>
+
+
+</body>
+
+</html>

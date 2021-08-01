@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Code-recommender - replication package</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/">
+
+    <!-- bootstrap 5.0.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/sticky-footer-navbar.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this sheet -->
+    <link href="../css/litetaturesurvey1.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Study I
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="study1.html">Study I</a></li>
+                    <li><a class="dropdown-item" href="literaturesurvey1.html">Characteristics from Literature</a></li>
+                    <li><a class="dropdown-item" href="survey1.html">Survey I</a></li>
+                    <li><a class="dropdown-item" href="taxonomy.html">Taxonomy</a></li>
+                    <li><a class="dropdown-item" href="tag.html">Tags</a></li>
+                    <li><a class="dropdown-item" href="demographic.html">Demographic Information</a></li>
+    
+                  </ul>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Study II
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="../studyII/study2.html">Study II</a></li>
+                    <li><a class="dropdown-item" href="../studyII/survey2.html">Survey II</a></li>
+                    <li><a class="dropdown-item" href="../studyII/task.html">Tasks</a></li>
+                  </ul>
+                </li>
+    
+              </ul>
+              <!--
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>-->
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+        <div class="container">
+
+            <div class="p-5 mb-1 rounded-3 bg-white">
+                <div class="container-fluid py-0 ">
+
+                    <h1 class="mt-1 text-center">Study I: Characteristics from Literature</h1>
+                    <p class="col-md-12 fs-5 mt-5">
+
+                        In this page we report the characteristics extracted from the literature
+                        Specifically, we focused on papers that presented:
+                    <ul class="fs-5">
+                        <li>
+                            <image src="../images/paper.png" width="30px" height="30px"></image>
+                            techniques for code generation/completion
+                        </li>
+                        <li>
+                            <image src="../images/paper.png" width="30px" height="30px"></image>
+                            empirical studies about code generation/completion techniques
+                        </li>
+                        <li>
+                            <image src="../images/paper.png" width="30px" height="30px"></image>
+                            techniques to generate code examples
+                        </li>
+                        <li>
+                            <image src="../images/paper.png" width="30px" height="30px"></image>
+                            empirical studies about code examples used by developers
+                        </li>
+
+                    </ul>
+
+                    </p>
+                    <div class="col-md-12 fs-5">
+                        Note that, to define such a list, we did not perform a systematic literature review to identify
+                        <b>all</b> papers in the surveyed areas: we relied on
+                        the experience of the six authors to identify a set of 41 peer-reviewed papers published in
+                        international conferences and journals and applied backward snowballing
+                        on their references to identify additional relevant works. At the end, we inspected 53 papers.
+                        Each
+                        paper was assigned to one author in charge of adding to a spreadsheet the list of
+                        "characteristics"
+                        described in the paper (if any). In some cases, the papers from which we extracted a
+                        characteristic
+                        did
+                        not explicitly point to the need for considering such a characteristic when building code
+                        recommender
+                        systems. However, this could be inferred from the text of the paper.
+
+                        The following table contains the list of the 14 characteristics:
+                    </div>
+                    <div class="starting_list">
+
+                        <table class="table table-bordered table-striped mt-3">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Attribute</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">References</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Characteristics of recommended code &gt; Code quality &gt; High readability and
+                                        understandability &gt; Concise Code </td>
+                                    <td>The recommended code must be as short and simple as possible. </td>
+                                    <td>[1,2,3]</td>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Characteristics of recommended code &gt; Code quality &gt; Correctness</td>
+                                    <td>The recommended code must be bug-free. </td>
+                                    <td>[1]</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Awareness &gt; Developers' knowledge </td>
+                                    <td>If multiple recommendations are possible, the one using code that is more
+                                        familiar
+                                        to
+                                        the developer must be used (e.g., the code using APIs already used in the past
+                                        by
+                                        the
+                                        developer receiving the recommendation).</td>
+                                    <td>[4]</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Characteristics of recommended code &gt; Code quality &gt; High readability and
+                                        understandability</td>
+                                    <td>The recommended code must be readable (\eg avoid very long statements, adopt
+                                        indentation) and easy to understand. </td>
+                                    <td>[5]</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td> Characteristics of recommended code &gt; Code quality &gt; High reusability
+                                    </td>
+                                    <td>The recommended code is easy to reuse. This is particularly relevant for
+                                        recommender
+                                        systems suggesting code components at higher granularity (e.g., entire methods)
+                                    </td>
+                                    <td>[5]</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Characteristics of recommended code &gt; Provides additional information &gt;
+                                        Documentation &gt; Commented code </td>
+                                    <td>The recommended code features comments documenting the statements.</td>
+                                    <td>[2]</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>Characteristics of recommended code &gt; Adaptive &gt; Developer's coding style
+                                    </td>
+                                    <td>The recommended code is adapted to the developer's coding style (e.g., using
+                                        extra
+                                        parenthesis to better format code if this is a practice frequently performed by
+                                        the
+                                        developer).</td>
+                                    <td>[6]</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>Characteristics of recommended code &gt; Code quality &gt; Meets best coding
+                                        practices &gt; Meets company/client standards</td>
+                                    <td>The recommended code can be configured to meet specific best coding practices
+                                        defined by the company/client (e.g., if variables are named with camelCase, the
+                                        same
+                                        convention must be adopted in the recommended code).</td>
+                                    <td>[6]</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td>Characteristics of recommended code &gt; Structural characteristics &gt; Precise
+                                        typing information</td>
+                                    <td>The recommended code can be configured to meet specific best coding practices
+                                        defined by the company/client (e.g., if variables are named with camelCase, the
+                                        same
+                                        convention must be adopted in the recommended code). </td>
+                                    <td>[7]</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10</th>
+                                    <td>Usability &gt; High responsiveness </td>
+                                    <td>The responsiveness of the code recommendation system in terms of time needed to
+                                        generate a recommendation. The recommender is responsive, not causing lagging
+                                        while
+                                        coding. </td>
+                                    <td>[8]</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11</th>
+                                    <td>Characteristics of recommended code &gt; Adaptive &gt; Coding context &gt;
+                                        Identifier names</td>
+                                    <td>The recommended code is adapted to the context of the recommendation by using
+                                        the
+                                        same variable names of the code it completes when possible. </td>
+                                    <td>[7]</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">12</th>
+                                    <td>Characteristics of recommended code &gt; Code quality &gt; Correctness &gt;
+                                        Correct
+                                        syntax</td>
+                                    <td>The recommended must not introduce syntax errors. </td>
+                                    <td>[9,10,8]</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">13</th>
+                                    <td>Characteristics of recommended code &gt; Code quality &gt; High readability and
+                                        understandability &gt; Step-by-step solution</td>
+                                    <td>In case the recommended code spans across many statements, the code is divided
+                                        into
+                                        multiple chunks (by using a blank line), each one responsible for a sub-task.
+                                    </td>
+                                    <td>[2]</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">14</th>
+                                    <td>Characteristics of recommended code &gt; Code quality &gt; Correctness &gt;
+                                        Bug/Vulnerability free </td>
+                                    <td>The recommended code is does not introduce bugs and/or vulnerabilities.</td>
+                                    <td>[11]</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="px-5 py-3 mb-4 mt-0">
+                <h3> References:</h3>
+
+                <div class="reference"><b>[1] </b> J. Kim, S. Lee, S. Hwang, and S. Kim. Adding examples into
+                    java documents. In 2009 IEEE/ACM International Conference on Automated Software Engineering,
+                    pages 540–544, 2009.</div>
+                <div class="reference"><b>[2] </b> S. M. Nasehi, J. Sillito, F. Maurer, and C. Burns. What makes
+                    a good code example?: A study of programming q a in stackoverflow. In 2012 28th IEEE
+                    International Conference on Software Maintenance (ICSM), pages 25–34, 2012.</div>
+                <div class="reference"><b>[3] </b> Vincent J Hellendoorn, Sebastian Proksch, Harald C Gall, and
+                    Alberto Bacchelli. When code completion fails: A case study on real-world completions. In
+                    2019 IEEE/ACM 41st International Conference on Software Engineering (ICSE), pages 960–970.
+                    IEEE, 2019.</div>
+                <div class="reference"><b>[4] </b> Madhuri R Marri, Suresh Thummalapenta, and Tao Xie. Improving
+                    software quality via code searching and mining. In 2009 ICSE Workshop on Search-Driven
+                    Development-Users, Infrastructure, Tools and Evaluation, pages 33–36. IEEE, 2009.</div>
+                <div class="reference"><b>[5] </b> Laura Moreno, Gabriele Bavota, Massimiliano Di Penta, Rocco
+                    Oliveto, and Andrian Marcus. How can i use this method? In Proceedings of the 37th
+                    International Conference on Software Engineering - Volume 1, ICSE ’15, page 880?890, 2015.
+                </div>
+                <div class="reference"><b>[6] </b> Htoo Htoo Sandi Kyaw, Shwe Thinzar Aung, Hnin Aye Thant, and
+                    Nobuo Funabiki. A proposal of code completion problem for java programming learning
+                    assistant system. In Conference on Complex, Intelligent, and Software Intensive Systems,
+                    pages 855–864. Springer, 2018.</div>
+                <div class="reference"><b>[7] </b> Daniel Perelman, Sumit Gulwani, Thomas Ball, and Dan
+                    Grossman. Type-directed completion of partial expressions. In Proceedings of the 33rd ACM
+                    SIGPLAN Conference on Programming Language Design and Implementation, PLDI ’12, page
+                    275?286, 2012.</div>
+                <div class="reference"><b>[8] </b> Alexey Svyatkovskiy, Shao Kun Deng, Shengyu Fu, and Neel
+                    Sundaresan. Intellicode compose: Code generation using transformer. arXiv preprint
+                    arXiv:2005.08025, 2020.</div>
+                <div class="reference"><b>[9] </b> Lu ́ıs Eduardo de Souza Amorim, Sebastian Erdweg, Guido
+                    Wachsmuth, and Eelco Visser. Principled syntactic code completion using placeholders. SLE
+                    2016, page 163?175, 2016.</div>
+                <div class="reference"><b>[10] </b> Wenhan Wang, Sijie Shen, Ge Li, and Zhi Jin. Towards
+                    full-line code completion with neural language models. arXiv preprint arXiv:2009.08603,
+                    2020.</div>
+                <div class="reference"><b>[11] </b> Roei Schuster, Congzheng Song, Eran Tromer, and Vitaly
+                    Shmatikov. You autocomplete me: Poisoning vulnerabilities in neural code completion, 2020.
+
+                </div>
+            </div>
+
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">Place sticky footer content here.</span>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+  <title>Code-recommender - replication package</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/">
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- bootstrap 5.0.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="../css/sticky-footer-navbar.css" rel="stylesheet">
+
+
+  <!-- Custom styles for this sheet -->
+  <link href="../css/taxonomy.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Study I
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="study1.html">Study I</a></li>
+                <li><a class="dropdown-item" href="literaturesurvey1.html">Characteristics from Literature</a></li>
+                <li><a class="dropdown-item" href="survey1.html">Survey I</a></li>
+                <li><a class="dropdown-item" href="taxonomy.html">Taxonomy</a></li>
+                <li><a class="dropdown-item" href="tag.html">Tags</a></li>
+                <li><a class="dropdown-item" href="demographic.html">Demographic Information</a></li>
+
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Study II
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="../studyII/study2.html">Study II</a></li>
+                <li><a class="dropdown-item" href="../studyII/survey2.html">Survey II</a></li>
+                <li><a class="dropdown-item" href="../studyII/task.html">Tasks</a></li>
+              </ul>
+            </li>
+
+          </ul>
+          <!--
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>-->
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Begin page content -->
+  <main class="flex-shrink-0">
+    <div class="container">
+
+      <div class="p-5 mb-4 bg-light rounded-3 bg-white">
+        <div class="container-fluid py-0 ">
+
+          <h1 class="mt-1 text-center">The taxonomy</h1>
+
+          <div class="col-md-12 fs-5 mt-5" id="samples">
+            <img id="zoom1" class="mx-0" width="100%" onmousemove="zoomIn(event)" onmouseout="zoomOut()"
+              src="../images/taxonomy_HQ.jpg">
+          </div>
+
+          <div class="col-md-12 fs-5 mt-3">
+            <div id="preview" onmousemove="zoomIn(event)">
+
+            </div>
+          </div>
+
+
+        </div>
+        <div class="mt-5 mb-0">
+          <div> Download the
+            <a href="../images/taxonomy_HQ.jpg" download="taxonomy.jpg">
+              IMG
+            </a>
+            /
+            <a href="../pdf/taxonomy.pdf" download="taxonomy.pdf">
+              PDF
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-5 mb-4 bg-light rounded-3 bg-white">
+
+        <h1 class="mt-1 text-center">The Definitions</h1>
+
+        <div class="panel panel-primary filterable mt-5">
+
+          <div class="row g-0 header-table">
+            <!-- use g-0 to remove gutters (extra margin)-->
+
+            <div class="col-md-6 bg-dark text-white py-2 px-4">
+              <h3 class="panel-title"></h3>
+            </div>
+            <div class="col-md-6 bg-dark text-white p-2">
+              <button class="btn btn-default btn-xs btn-filter text-white float-end">
+                <div class="svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="test"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                  </svg>
+                </div>
+                Filter
+              </button>
+              <a href="../xls/Textual definition of all characteristics.xlsx" download="Textual definition of all characteristics.xlsx">
+
+                <button class="btn btn-default btn-xs text-white float-end">
+                  <div class="svg">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-download" viewBox="0 0 16 16">
+                      <path
+                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                      <path
+                        d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                    </svg>
+                  </div>
+                  Download table
+                </button>
+              </a>
+            </div>
+          </div>
+
+
+
+          <table class="table table-bordered table-striped" id="export-coverage">
+            <thead>
+              <tr class="filters">
+                <th width="40%;"><input type="text" class="form-control" placeholder="Tag" disabled></th>
+                <th width="60%;"><input type="text" class="form-control" placeholder="Definition" disabled></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr> <td>Awareness</td><td>This category groups together information items the recommender should be aware of to improve its recommendations.</td> </tr>
+              <tr> <td>Awareness&gt; Coding Context</td><td>The recommended code is based on a specific coding context, usually representing the code written by the developer in the IDE</td> </tr>
+              <tr> <td>Awareness&gt; Coding history</td><td>The recommended code is generated/improved based on development activities performed in the past. The past development activities could be related to the developer receiving the recommendation or to other developers. In other words, "natural" coding solutions are favored.</td> </tr>
+              <tr> <td>Awareness&gt; Developer's tasks</td><td>The code recommender is aware of the task(s) the developer is working on. Differently from the coding context that only captures the code under development in a specific moment, in this case a more complete view of the developer's tasks is available (e.g., the tool could mine from the issue tracker the issues assigned to the developer and use this information to generate/improve its recommendations)</td> </tr>
+              <tr> <td>Awareness&gt; Developers' knowledge</td><td>If multiple recommendations are possible, the one using code that is more familiar to the developer must be used (e.g., the code using APIs already used in the past by the developer receiving the recommendation).</td> </tr>
+              <tr> <td>Characteristics of recommended code</td><td>This category groups together specific code characteristics (detailed in the leaf nodes) that might be desirable for the recommended code. </td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Structural characteristics</td><td>The recommended code meets specific structural characteristics of the code (detailed in the leaf nodes) that might be desirable.</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Structural characteristics&gt; Unambiguous</td><td>The recommended code is unambiguous (e.g., the tool does not suggest multiple imports with the same name, which make it difficult to identify the one actually needed)</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Structural characteristics&gt; Easy to integrate in code under development</td><td>The recommended code does not require major changes to be integrated in the code under development (e.g., a code using object types not available in the language [8] but defined in other projects from which the recommended code has been learned is difficult to reuse).</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Structural characteristics&gt; Precise typing information</td><td>The recommended code relies on specific types (e.g., java.time.LocalDate ) rather than the generic one (e.g., Object).</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Structural characteristics&gt; Type Checked</td><td>The recommender checks types when completing statements, ensuring values assigned to a variable are compatible with its type.</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Adaptive</td><td>The recommended code is customized based on specific factors (detailed in the leaf nodes).</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Adaptive&gt; Coding context</td><td>The recommended code is adapted to the code the developer is writing (see leaf nodes).</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Adaptive&gt; Coding context&gt; Identifier names</td><td>The recommended code is adapted to the context of the recommendation by using the same variable [10] names of the code it completes when possible.</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Adaptive&gt; Coding context&gt; System's vocabulary</td><td>The recommended code relies on the system's vocabulary when possible (e.g., by reusing therms to synthesize identifiers)</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Adaptive&gt; Developer's coding style</td><td>The recommended code is adapted to the developer's coding style (e.g., using extra parenthesis to better format code if this is a practice frequently performed by the developer)</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Code quality</td><td>The recommended code meets specificy quality criteria (see leaf nodes)</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Code quality&gt; Maintanability</td><td>The recommended code is easy to maintain</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Code quality&gt; Performance</td><td>The recommended code appears is optimized in terms of performance (e.g., it does not introduce unneeded operations)</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Code quality&gt; Robustness</td><td>The recommended code is robust when dealing with possible erroneous situations (e.g., a null check is implemented if needed)</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Code quality&gt; High reusability</td><td>The recommended code is easy to reuse. This is particularly relevant for recommender systems suggesting code components at higher granularity (e.g., entire methods see Wen et al. ICSE 2021)</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Code quality&gt; Meets best coding practices</td><td>The recommended code meets best coding practices. The latter depend on the language/paradigm in use.</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Code quality&gt; Meets best coding practices&gt; Meets company/client standards</td><td>The recommended code can be configured to meet specific best coding practices defined by the company/client  (e.g., if variables are named with camelCase, the same convention must be adopted in the [9] recommended code).</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Code quality&gt; High readability and understandability</td><td>The recommended code must be readable (e.g., avoid very long statements, adopt indentation) and easy to understand.</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Code quality&gt; High readability and understandability&gt; Concise Code</td><td>The recommended code is as short and simple as possible</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Code quality&gt; High readability and understandability&gt; Step-by-step solution</td><td>In case it spans across many statements, the recommendation is divided into multiple chunks (by using a blank line), each one responsible for a sub-task.</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Code quality&gt; High readability and understandability&gt; Meaningful identifiers</td><td>The recommended code must use meaningful identifiers rathern than placeholders.</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Code quality&gt; Correctness</td><td>The recommended code must be bug-free.</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Code quality&gt; Correctness&gt; Bug/Vulnerability free</td><td>The recommended code is does not introduce bugs and/or vulnerabilities.</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Code quality&gt; Correctness&gt; Correct syntax</td><td>The recommended code does not introduce syntax errors.</td> </tr>
+              <tr> <td>Functionality</td><td>This category groups together the features developers would like to see in source code recommenders (see leaf nodes)</td> </tr>
+              <tr> <td>Functionality&gt; Coverage of support</td><td>This subcategory details the desiderata of developers when it comes to the coverage of the recommender tool (i.e., the different coding scenarios it can support)</td> </tr>
+              <tr> <td>Functionality&gt; Coverage of support&gt; Language keywords</td><td>The recommender is able to suggest the language keywords when needed</td> </tr>
+              <tr> <td>Functionality&gt; Coverage of support&gt; Support for third-party libraries</td><td>The recommender is able to propose code recommendations when dealing with code using third-party libraries</td> </tr>
+              <tr> <td>Functionality&gt; Coverage of support&gt; Support for identifiers</td><td>The recommender provides support for identifiers, suggesting them when needed</td> </tr>
+              <tr> <td>Functionality&gt; Coverage of support&gt; Support for identifiers&gt; Asks developer when meaningful identifiers cannot be defined</td><td>If the recommender cannot identify meaningful identifiers for a piece of code to recommend, it should interact with the developer for further information.</td> </tr>
+              <tr> <td>Functionality&gt; Coverage of support&gt; Autocomplete refactorings</td><td>The recommender is able to autocomplete a refactoring operation started by the developer.</td> </tr>
+              <tr> <td>Functionality&gt; Coverage of support&gt; Multi-lingual code statements (e.g., C# and SQL)</td><td>The recommender can generate code recommendations even when multi-lingual code statements (e.g., C# and SQL) are written by the developer</td> </tr>
+              <tr> <td>Functionality&gt; Coverage of support&gt; Support for multi-token code completion</td><td>The recommender can generate code recommendations that are not limited to a single token, but span several tokens.</td> </tr>
+              <tr> <td>Functionality&gt; Coverage of support&gt; Support for multi-token code completion&gt; Assert statements</td><td>The recommender can automatically generate assert statements for a given test.</td> </tr>
+              <tr> <td>Functionality&gt; Coverage of support&gt; Support for multi-token code completion&gt; Control structures</td><td>The recommender supports code completion for non-trivial code statements such as control structures (e.g., guessing the condition in an if statement).</td> </tr>
+              <tr> <td>Functionality&gt; Coverage of support&gt; Support for multi-token code completion&gt; Entire statement(s)</td><td>The recommender can generate entire code statement(s).</td> </tr>
+              <tr> <td>Functionality&gt; Coverage of support&gt; Support for multi-token code completion&gt; Implementation for stubs</td><td>The recommender is able to implement stub functions given their signature.</td> </tr>
+              <tr> <td>Functionality&gt; Coverage of support&gt; Support for multi-token code completion&gt; Templates</td><td>The recommender can recommend code templates, representing "abstract code" that the developer can then fill-in (e.g., a template for a for loop). </td> </tr>
+              <tr> <td>Functionality&gt; Coverage of support&gt; Support for multi-token code completion&gt; Functions' parameters</td><td>The recommender is able to recommend the parameters' values in a function invocation.</td> </tr>
+              <tr> <td>Functionality&gt; Recommended modality</td><td>The modality used by the recommender when suggesting a recommendation</td> </tr>
+              <tr> <td>Functionality&gt; Recommended modality&gt; Ask additional information when what the developer is doing is not clear</td><td>If the recommender cannot infer what the developer is doing it is able to ask additional information to better contextualize the recommendations.</td> </tr>
+              <tr> <td>Functionality&gt; Recommended modality&gt; Multiple options available</td><td>The recommender is able to generate multiple recommendations for a given scenario.</td> </tr>
+              <tr> <td>Functionality&gt; Recommended modality&gt; Proactive: perceives when developer needs help</td><td>The recommender perceives when the developer needs help (e.g., it is not writing for long time) and starts triggering recommendations. It does not need to be explicitly invoked by the developer.</td> </tr>
+              <tr> <td>Functionality&gt; Recommended modality&gt; Smart ranking</td><td>When multiple options are available, the tool ranks the recommendations using a smart criterion rather than alphabetical order.</td> </tr>
+              <tr> <td>Functionality&gt; Recommended modality&gt; Smart ranking&gt; Code quality is promoted when multiple solutions are available</td><td>When multiple options are available, code quality is used as a sorting criterion (high quality on top).</td> </tr>
+              <tr> <td>Functionality&gt; Recommended modality&gt; Open source</td><td>If the recommeded code is retrieved from a dataset, such a dataset must feature open source code which is less likely to result in licensing issues and is more likely to have been widely tested</td> </tr>
+              <tr> <td>Functionality&gt; Provides additional information </td><td>The recommender provides additional information together with the suggestion</td> </tr>
+              <tr> <td>Functionality&gt; Provides additional information &gt; Highlights required edits</td><td>If the code that the developer is writing is very similar to other existing, it highlights the differences that might be errors.</td> </tr>
+              <tr> <td>Functionality&gt; Provides additional information &gt; Provides rationale justifying the recommendation</td><td>The tool provides a rationale to justify the given recommendation (e.g., you are seeing this code because ...).</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Provides additional information &gt; Documentation</td><td>The recommended code includes the documentation</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Provides additional information &gt; Documentation&gt; Commented code</td><td>The recommended code features comments documenting the statements</td> </tr>
+              <tr> <td>Characteristics of recommended code&gt; Provides additional information &gt; Documentation&gt; Code example</td><td>The recommender system can generate usage examples showing how to use specific API/methods</td> </tr>
+              <tr> <td>Functionality&gt; Self-improving based on feedback</td><td>The recommender improves the suggestions based on the feedback received by the developer for past recommendations.</td> </tr>
+              <tr> <td>Functionality&gt; Early prediction</td><td>The recommender is able to trigger recommendations early in the coding process (e.g., the developer just wrote a few code tokens).</td> </tr>
+              <tr> <td>Functionality&gt; Configurable</td><td>The recommender is customizable based on developers' preferences (e.g., see leaf node)</td> </tr>
+              <tr> <td>Functionality&gt; Configurable&gt; Shortcuts definition</td><td>The tool allows the user to define some shortcuts</td> </tr>
+              <tr> <td>Usability</td><td>This category groups together usability aspects they would like to see in source code recommenders (see leaf nodes)</td> </tr>
+              <tr> <td>Usability&gt; Intuitive</td><td>The recommender is intuitive (e.g., shallow learning curve)</td> </tr>
+              <tr> <td>Usability&gt; No overhead while coding</td><td>The recommender does not hinder coding (e.g., a button can be pressed to accept/decline the recommendations) and does not require context-switch.</td> </tr>
+              <tr> <td>Usability&gt; Non-invasive</td><td>The recommender is never in control of the code writing, it only provides suggestion. </td> </tr>
+              <tr> <td>Usability&gt; Non-invasive&gt; Asks confirmation before changing code</td><td>The recommender asks confirmation to the developer before implementing code.</td> </tr>
+              <tr> <td>Usability&gt; Integrated with IDE</td><td>The recommender is integrated within the IDE.</td> </tr>
+              <tr> <td>Usability&gt; High responsiveness</td><td>The recommender is responsive, not causing lagging while coding.</td> </tr>
+              <tr> <td>Accuracy of recommendations</td><td>The recommended code is accurate (i.e., the recommender is able to suggest a code semantically equivalent to the one the developer was going to write)</td> </tr>
+              <tr> <td>Accuracy of recommendations&gt; Filtering based on confidence</td><td>The recommender does not trigger recommendations when its confidence is low.</td> </tr>
+              <tr> <td>Accuracy of recommendations&gt; Filtering based on confidence&gt; Templating in low-confidence scenarios</td><td>If the recommender has a low-confidence about a recommendation, it is able to suggest a template for the recommendation rather than the complete raw code.</td> </tr>
+            </tbody>
+        
+          </table>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+    </div>
+
+
+
+    </div>
+  </main>
+
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+  </footer>
+
+  <script src="../js/taxonomy.js"></script>
+
+</body>
+
+</html>

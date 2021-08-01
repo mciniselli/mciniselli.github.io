@@ -1,0 +1,95 @@
+#form{
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 40px;
+}
+
+.survey-title{
+    margin-bottom: 30px;
+}
+
+/* each question has a specific margin top*/
+.question {
+    margin: 100px 0px;
+}
+
+/* all question's titles have a bottom margin*/
+.title {
+    margin: 0px 0px 20px 0px;
+    display: block;
+}
+
+
+/*
+range slider
+*/
+
+#rangeYears{
+    width: 100%;
+}
+
+.box-minmax{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color:black;
+}
+ 
+.box-minmax  span:first-child{
+      margin-left: 10px;
+}
+
+
+
+#programmingLanguages{
+    width: 60%;
+    table-layout: fixed; /* to have the same width for all the columns*/
+}
+
+/* change the size of the table if the screen is too small*/
+@media (max-width:1000px){
+    #programmingLanguages{
+        width: 100%;
+    }
+
+}
+
+#IDEs{
+    width: 100%;
+}
+
+/* centering all the column but the first one horizontally and vertically*/
+#capabilities{text-align: center; }
+#capabilities td { vertical-align: middle;}
+
+.description{
+    text-align: left!important;
+}
+
+
+/* each input text is small but the ones with fullsize class*/
+
+.form-control { padding: 0px 0px;  line-height: 10px!important; width: 150px!important; margin-left: 20px!important; margin-top: 2px!important; }
+
+.fullsize {
+    width: 100%!important;
+    margin-left: 0px!important;
+    line-height: 60px!important;
+}
+
+/* each table does not have the bottom border*/
+table { border-collapse: collapse;
+}
+
+tbody > tr:last-child > td {
+    border-bottom: 0;
+}
+
+/* we used that to add some margin at the top of a couple of nested questions*/
+
+.margintop {
+    margin-top: 100px;
+}
+
