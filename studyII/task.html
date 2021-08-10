@@ -60,13 +60,21 @@
                 Study I
               </a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="../studyI/study1.html">Study I</a></li>
+                <!-- <li><a class="dropdown-item" href="../studyI/study1.html">Home</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li> -->
+                <li><a class="dropdown-item" href="../studyI/survey1.html">Survey Questions</a></li>
                 <li><a class="dropdown-item" href="../studyI/literaturesurvey1.html">Characteristics from Literature</a>
                 </li>
-                <li><a class="dropdown-item" href="../studyI/survey1.html">Survey I</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="../studyI/demographic.html">Demographics</a></li>
+
+                <li><a class="dropdown-item" href="../studyI/tag.html">Participants' Answers</a></li>
+
                 <li><a class="dropdown-item" href="../studyI/taxonomy.html">Taxonomy</a></li>
-                <li><a class="dropdown-item" href="../studyI/tag.html">Tags</a></li>
-                <li><a class="dropdown-item" href="../studyI/demographic.html">Demographic Information</a></li>
 
               </ul>
             </li>
@@ -77,9 +85,18 @@
                 Study II
               </a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="study2.html">Study II</a></li>
-                <li><a class="dropdown-item" href="survey2.html">Survey II</a></li>
-                <li><a class="dropdown-item" href="task.html">Tasks</a></li>
+                <!-- <li><a class="dropdown-item" href="study2.html">Home</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li> -->
+                <li><a class="dropdown-item" href="survey2.html">Survey Questions</a></li>
+                <li><a class="dropdown-item" href="task.html">Survey Tasks</a></li>
+								<li><a class="dropdown-item" href="techniques.html">Code Recommendation Techniques</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="results.html">Results</a></li>
+
               </ul>
             </li>
 
@@ -100,165 +117,228 @@
   <main class="flex-shrink-0">
     <div class="container">
 
-      <div class="p-2 mb-2 bg-light rounded-3">
-        <div class="container-fluid py-0 ">
 
-          <div class="text-center">
-            <img class="buttons" id="previous_button" src="../images/previous-black.png">
+      <div class="mx-0 mx-sm-auto bg-white">
+        <div class="card">
+          <div class="card-body px-4">
 
-            <h1 class="mt-1 title" id="title">Task 1</h1>
 
-            <img class="buttons" id="next_button" src="../images/next-black.png">
 
-          </div>
-        </div>
-      </div>
+            <div class="box-back">
+              <div>
+                <!-- <a id="back" href="study2.html">
 
-      <div class="p-4 mb-4 bg-light rounded-3 task-description" id="description-area">
-        <div class="container-fluid py-0">
+                  <img class="buttons-back" src="../images/previous-black.png">
+                  <h4 class="my-0">Study II</h4>
+                </a> -->
 
-          <h2 class="mt-1 text-center mb-3">Task Description</h2>
-          <p class="col-md-12 fs-5 mt-0" id="description">
+              </div>
+              <div class="push">
+                <a href="../zip/Tasks.zip" download="Tasks.zip">
+                  <button type="button" id="download_button" class="btn btn-outline-dark" >
+                    <div class="px-2" style="display: inline-block!important;">Download All Tasks</div>
+                  </button>
+                </a>
+              </div>
 
-          </p>
-        </div>
-      </div>
+            </div>
 
-      <div class="row align-items-md-stretch g-0">
-        <div class="col-md-6">
-          <div class="h-100 p-5 text-white bg-dark rounded-3 mright">
-            <h2>Masked Code</h2>
-            <p>
 
-            <pre class="python mb-0"><code id="snippet1">
+            <br>
+            <h1 class="text-center">Study II: Survey Tasks</h1>
+
+
+
+
+            <div class="text-center mt-5">
+              <div class="box">
+                <img class="buttons" id="previous_button" src="../images/previous-black.png">
+
+                <h1 class="mt-1 title" id="title">Task 1</h1>
+
+                <img class="buttons" id="next_button" src="../images/next-black.png">
+              </div>
+            </div>
+
+
+            <div class="mx-0 mx-sm-auto my-5">
+              <div class="card">
+                <div class="card-body px-4 bg-light">
+
+                  <h2 class="mt-1 text-center mb-3">Task Description</h2>
+                  <p class="col-md-12 fs-5 mt-0" id="description">
+
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row align-items-md-stretch g-0">
+              <div class="col-md-6">
+                <div class="h-100 px-4 py-5 text-white bg-dark rounded-3 mright">
+                  <h2>Masked Code</h2>
+
+                  <pre class="python mb-0"><code id="snippet1">
 
             </code></pre>
-            </p>
-          </div>
-        </div>
+                </div>
+              </div>
 
-        <div class="col-md-6">
-          <div class="h-100 p-5 bg-light border rounded-3 mleft white">
-            <h2>Verification Question</h2>
-            <p>
-            <div class="mb-3"> Which of the following choices correctly fill the <span class="bold-red">&lt;TO
-                COMPLETE&gt;</span>?</div>
-            <span class="bold">
-              <ul id="validator">
-                <li>
-                  <image src="../images/correct.png" width="30px" height="30px"></image>
-                  <div id="correct" class="validate_choice"></div>
-                </li>
-                <li>
-                  <image src="../images/wrong.png" width="30px" height="30px"></image>
-                  <div id="wrong1" class="validate_choice"></div>
-                </li>
-                <li>
-                  <image src="../images/wrong.png" width="30px" height="30px"></image>
-                  <div id="wrong2" class="validate_choice"></div>
-                </li>
-
-              </ul>
-
-              </p>
-
-          </div>
-        </div>
-      </div>
+              <div class="col-md-6">
+                <div class="h-100 px-4 py-5 border rounded-3 mleft bg-light">
+                  <h2>Verification Question</h2>
+                  <span> Which of the following choices correctly fill the</span> <span>
+                    <pre class="bold-red-verification">&lt;TO COMPLETE&gt;</pre>
+                  </span><span>?</span>
+                  <p>
 
 
-      <div>
-        <h2 class="text-center mt-5 mb-0">State of the Art Suggestions</h2>
+                  <ul id="validator">
+                    <li>
+                      <div class="answer">
+                        <img class="answer_image" src="../images/correct.png">
+                        <div id="correct" class="validate_choice"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="answer">
+                        <img class="answer_image" src="../images/wrong.png">
+                        <div id="wrong1" class="validate_choice"></div>
+                      </div>
 
-        <div>
+                    </li>
+                    <li>
+                      <div class="answer">
+                        <img class="answer_image" src="../images/wrong.png">
+                        <div id="wrong2" class="validate_choice"></div>
+                      </div>
+                    </li>
+                  </ul>
+                  </p>
 
-          <div id="carouselExampleCaptions" class="carousel slide carousel-multi-item" data-bs-ride="carousel"
-            data-bs-interval="false">
-
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
+                </div>
+              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="px-0 py-5 mb-4 bg-light rounded-3">
-                  <div class="container-fluid py-5 rounded-3 inner bg-dark">
-                    <h3 class=" fw-bold text-center text-white">IDE CODE COMPLETION</h3>
-                    <p class="col-md-8 fs-4">
-                    <div class="prediction">
-                      <pre class="python mb-0"><code id="IDE">
+          </div>
+
+          <div>
+            <h2 class="text-center mt-5 mb-4">State-of-the-Art Recommendations</h2>
+
+            <div>
+
+              <div class="px-4">
+
+
+                <nav>
+                  <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                    <a class="nav-link" id="nav-retrieval-tab" data-bs-toggle="tab" href="#nav-retrieval" role="tab"
+                      aria-controls="nav-retrieval" aria-selected="true">Retrieval-Based Code Completion</a>
+                    <a class="nav-link active" id="nav-IDE-tab" data-bs-toggle="tab" href="#nav-IDE" role="tab"
+                      aria-controls="nav-IDE" aria-selected="false">IDE Code Completion</a>
+                    <a class="nav-link" id="nav-DL-tab" data-bs-toggle="tab" href="#nav-DL" role="tab"
+                      aria-controls="nav-DL" aria-selected="false">DL-Based Code Completion</a>
+                    <a class="nav-link" id="nav-N2C-tab" data-bs-toggle="tab" href="#nav-N2C" role="tab"
+                      aria-controls="nav-N2C" aria-selected="false">Natural Language to Code Translation</a>
+                  </div>
+                </nav>
+
+
+
+
+                <div class="tab-content" id="nav-tabContent">
+
+                  <!-- IDE TAB -->
+
+                  <div class="tab-pane fade show active" id="nav-IDE" role="tabpanel" aria-labelledby="nav-IDE-tab">
+
+
+                    <div class="container-fluid py-3 rounded-3 inner bg-dark">
+                      <p class="col-md-8 fs-4">
+                      <div class="prediction">
+                        <div class="left">
+
+                          <pre class="python mb-0"><code id="IDE">
+
+                      </code></pre>
+                        </div>
+                      </div>
+                      </p>
+                    </div>
+
+
+
+                  </div>
+
+                  <!-- DL TAB -->
+
+
+                  <div class="tab-pane fade" id="nav-DL" role="tabpanel" aria-labelledby="nav-DL-tab">
+
+                    <div class="container-fluid py-3 rounded-3 inner bg-dark">
+                      <p class="col-md-8 fs-4">
+                      <div class="prediction">
+                        <div class="left">
+
+                          <pre class="python mb-0"><code id="T5">
 
                         </code></pre>
+                        </div>
+                      </div>
+                      </p>
                     </div>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="px-0 py-5 mb-4 bg-light rounded-3">
-                  <div class="container-fluid py-5 inner bg-dark">
-                    <h3 class="fw-bold text-center text-white">DL-BASED CODE COMPLETION</h3>
-                    <p class="col-md-8 fs-4">
-                    <div class="prediction">
-                      <pre class="python mb-0"><code id="T5">
-  
-                          </code></pre>
-                    </div>
-                    </p>
-                  </div>
-                </div>
 
-              </div>
-              <div class="carousel-item">
-                <div class="px-0 py-5 mb-4 bg-light rounded-3">
-                  <div class="container-fluid py-5 inner bg-dark">
-                    <h3 class="fw-bold text-center text-white">RETRIEVAL-BASED CODE COMPLETION</h3>
-                    <p class="col-md-8 fs-4">
-                    <div class="prediction">
-                      <pre class="python mb-0"><code id="retrieval">
-  
-                          </code></pre>
-                    </div>
-                    </p>
                   </div>
-                </div>
 
-              </div>
+                  <!-- NATURAL TO CODE TAB -->
 
-              <div class="carousel-item">
-                <div class="px-0 py-5 mb-4 bg-light rounded-3">
-                  <div class="container-fluid py-5 inner bg-dark">
-                    <h3 class="fw-bold text-center text-white">NATURAL LANGUAGE TO CODE TRANSLATION</h3>
-                    <p class="col-md-8 fs-4">
-                    <div class="prediction">
-                      <pre class="python mb-0"><code id="N2C">
-  
-                          </code></pre>
+
+                  <div class="tab-pane fade" id="nav-N2C" role="tabpanel" aria-labelledby="nav-N2C-tab">
+                    <div class="container-fluid py-3 rounded-3 inner bg-dark">
+                      <p class="col-md-8 fs-4">
+                      <div class="prediction">
+                        <div class="left">
+
+                          <pre class="python mb-0"><code id="N2C">
+
+                        </code></pre>
+                        </div>
+                      </div>
+                      </p>
                     </div>
-                    </p>
                   </div>
+
+                  <!-- RETRIEVAL-BASED TAB -->
+
+
+                  <div class="tab-pane fade" id="nav-retrieval" role="tabpanel" aria-labelledby="nav-retrieval-tab">
+                    <div class="container-fluid py-3 rounded-3 inner bg-dark">
+                      <p class="col-md-8 fs-4">
+                      <div class="prediction">
+                        <div class="left">
+                          <pre class="python mb-0"><code id="retrieval">
+
+                        </code></pre>
+                        </div>
+                      </div>
+                      </p>
+                    </div>
+                  </div>
+
                 </div>
 
               </div>
+
+
+
+
             </div>
-
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
+
+
+
+
+
+
         </div>
       </div>
 
@@ -269,7 +349,8 @@
 
   <footer class="footer mt-auto py-3 bg-light">
     <div class="container">
-      <span class="text-muted">Place sticky footer content here.</span>
+      <span class="text-muted">Replication package for <em>Source Code Recommender Systems:
+        Practitioners' Wishes vs State-of-the-art</em>.</span>
     </div>
   </footer>
 

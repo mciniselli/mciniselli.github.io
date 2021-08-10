@@ -1,7 +1,5 @@
-.margintop{
-    margin-top: 30px;
-}
-
-li {
-	list-style-type: none;
+.reference{
+    display: inline-block;
+    padding-right: 4px;
+    padding-left: 4px;
 }

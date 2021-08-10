@@ -21,9 +21,6 @@
   <!-- Custom styles for this template -->
   <link href="../css/sticky-footer-navbar.css" rel="stylesheet">
 
-
-  <!-- Custom styles for this sheet -->
-  <link href="../css/study1.css" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -48,12 +45,21 @@
                 Study I
               </a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="study1.html">Study I</a></li>
-                <li><a class="dropdown-item" href="literaturesurvey1.html">Characteristics from Literature</a></li>
-                <li><a class="dropdown-item" href="survey1.html">Survey I</a></li>
+                <!-- <li><a class="dropdown-item" href="study1.html">Home</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li> -->
+                <li><a class="dropdown-item" href="survey1.html">Survey Questions</a></li>
+                <li><a class="dropdown-item" href="literaturesurvey1.html">Characteristics From Literature</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="demographic.html">Demographics</a></li>
+
+                <li><a class="dropdown-item" href="tag.html">Participants' Answers</a></li>
+
                 <li><a class="dropdown-item" href="taxonomy.html">Taxonomy</a></li>
-                <li><a class="dropdown-item" href="tag.html">Tags</a></li>
-                <li><a class="dropdown-item" href="demographic.html">Demographic Information</a></li>
 
               </ul>
             </li>
@@ -64,9 +70,18 @@
                 Study II
               </a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="../studyII/study2.html">Study II</a></li>
-                <li><a class="dropdown-item" href="../studyII/survey2.html">Survey II</a></li>
-                <li><a class="dropdown-item" href="../studyII/task.html">Tasks</a></li>
+                <!-- <li><a class="dropdown-item" href="../studyII/study2.html">Home</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li> -->
+                <li><a class="dropdown-item" href="../studyII/survey2.html">Survey Questions</a></li>
+                <li><a class="dropdown-item" href="../studyII/task.html">Survey Tasks</a></li>
+								<li><a class="dropdown-item" href="../studyII/techniques.html">Code Recommendation Techniques</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="../studyII/results.html">Results</a></li>
+
               </ul>
             </li>
 
@@ -85,78 +100,88 @@
   <main class="flex-shrink-0">
     <div class="container">
 
-      <div class="p-5 mb-4 bg-light rounded-3 bg-white">
-        <div class="container-fluid py-0 ">
-
-          <h1 class="mt-1 text-center">Study I: Relevant Characteristics of Code Recommenders</h1>
-          <p class="col-md-12 fs-5 mt-5">
+      <div class="mx-0 mx-sm-auto bg-white">
+        <div class="card">
+          <div class="card-body px-4">
 
 
-          <div class="row align-items-md-stretch">
-            <div class="col-md-6">
-              <div class="h-100 p-5 text-white bg-dark rounded-3">
-                <h2 class="text-center">Goal</h2>
-                <p>Investigate what the <em>desiderata</em> of software practitioners are
-                  when it comes to code recommender systems.</p>
+
+            <div class="box-back">
+              <h4 class="my-0">&nbsp;</h4>
+            </div>
+
+            <br>
+            <h1 class="text-center">Study I: Relevant Characteristics of Code Recommenders</h1>
+
+
+            <p class="col-md-12 fs-5 mt-5">
+
+
+            <div class="row align-items-md-stretch">
+              <div class="col-md-6">
+                <div class="h-100 p-5 text-white bg-dark rounded-3">
+                  <h2 class="text-center">Goal</h2>
+                  <p>Investigation of what the <em>desiderata</em> of software practitioners are when it comes to code
+                    recommender systems.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="h-100 p-5 bg-light border rounded-3">
+                  <h2 class="text-center">Research Question</h2>
+                  <p>What are the <em>characteristics</em> of code recommender systems
+                    that are considered important by practitioners?</p>
+                </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="h-100 p-5 bg-light border rounded-3">
-                <h2 class="text-center">Research Question</h2>
-                <p>What are the <em>characteristics</em> of code recommender systems
-                  that are considered important by practitioners?</p>
+
+            <div class="mt-4">
+              <h2> Characteristics derived from the literature</h2>
+              <div class="mb-2">
+                We extracted a list of 14 characteristics looking at the literature. You can find the full list at <a href="literaturesurvey1.html">this page</a>.
+              </div>
+
+            </div>
+
+
+            <div class="mt-4">
+              <h2> Survey</h2>
+              <div class="mb-2">
+                We ran the survey through Amazon Mechanical Turk and via personal contacts. A copy of the survey can be found at <a href="survey1.html">this page</a>.
               </div>
             </div>
-          </div>
 
-          <div class="mt-4">
-            <h2> Characteristics from Literature</h2>
-            <div class="mb-2">
-              We extracted a list of 14 characteristics looking at the literature. <a href="literaturesurvey1.html">See further details</a>
+            <div class="mt-4">
+              <h2>Taxonomy</h2>
+              <div class="mb-2">
+                After 3 rounds of discussions on collected answers, we defined <a href="taxonomy.html">a taxonomy of the characteristics of recommender systems</a>.
+              </div>
             </div>
-            
-          </div>
 
-
-          <div class="mt-4">
-            <h2> The Survey</h2>
-            <div class="mb-2">
-              We run the survey to collect information from 60 participants collected through Amazon Mechanical Turk and via personal contacts. <a href="survey1.html">Have a look at the survey</a>
-
+            <div class="mt-4">
+              <h2>Tagged Answers</h2>
+              <div class="mb-2">
+                You can find and filter out the answers collected from participants, with the tags we assigned them to build the taxonomy at <a href="tag.html">this page</a>.
+              </div>
             </div>
-          </div>
 
-          <div class="mt-4">
-            <h2> The Taxonomy</h2>
-            <div class="mb-2">
-              After 3 rounds of 20 participants we defined our taxonomy. <a href="taxonomy.html">Have a look at the taxonomy</a>
+            <div class="mt-4">
+              <h2>Demographic Information</h2>
+              <div class="mb-2">
+                <a href="demographic.html">At this page</a> you can see a summary of the demographic information for the participants of Survey 1.
+              </div>
             </div>
-          </div>
 
-          <div class="mt-4">
-            <h2> The Tagged Answers</h2>
-            <div class="mb-2">
-              You can have a look and filter out the answers from participants with the tag we assigned them for creating the taxonomy. <a href="tag.html">Have a look here</a>
-            </div>
+            </p>
           </div>
-          
-          <div class="mt-4">
-            <h2> The Demographic Information</h2>
-            <div class="mb-2">
-              Here you can see a summary of the demographic information for all the participants. <a href="demographic.html">Have a look here</a>
-            </div>
-          </div>
-
-          </p>
         </div>
       </div>
     </div>
-
   </main>
 
   <footer class="footer mt-auto py-3 bg-light">
     <div class="container">
-      <span class="text-muted">Place sticky footer content here.</span>
+      <span class="text-muted">Replication package for <em>Source Code Recommender Systems:
+          Practitioners' Wishes vs State-of-the-art</em>.</span>
     </div>
   </footer>
 

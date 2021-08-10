@@ -60,12 +60,21 @@
                 Study I
               </a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="study1.html">Study I</a></li>
-                <li><a class="dropdown-item" href="literaturesurvey1.html">Characteristics from Literature</a></li>
-                <li><a class="dropdown-item" href="survey1.html">Survey I</a></li>
+                <!-- <li><a class="dropdown-item" href="study1.html">Home</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li> -->
+                <li><a class="dropdown-item" href="survey1.html">Survey Questions</a></li>
+                <li><a class="dropdown-item" href="literaturesurvey1.html">Characteristics From Literature</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="demographic.html">Demographics</a></li>
+
+                <li><a class="dropdown-item" href="tag.html">Participants' Answers</a></li>
+
                 <li><a class="dropdown-item" href="taxonomy.html">Taxonomy</a></li>
-                <li><a class="dropdown-item" href="tag.html">Tags</a></li>
-                <li><a class="dropdown-item" href="demographic.html">Demographic Information</a></li>
 
               </ul>
             </li>
@@ -76,9 +85,18 @@
                 Study II
               </a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="../studyII/study2.html">Study II</a></li>
-                <li><a class="dropdown-item" href="../studyII/survey2.html">Survey II</a></li>
-                <li><a class="dropdown-item" href="../studyII/task.html">Tasks</a></li>
+                <!-- <li><a class="dropdown-item" href="../studyII/study2.html">Home</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li> -->
+                <li><a class="dropdown-item" href="../studyII/survey2.html">Survey Questions</a></li>
+                <li><a class="dropdown-item" href="../studyII/task.html">Survey Tasks</a></li>
+								<li><a class="dropdown-item" href="../studyII/techniques.html">Code Recommendation Techniques</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="../studyII/results.html">Results</a></li>
+
               </ul>
             </li>
 
@@ -99,264 +117,306 @@
     <div class="container">
 
 
-      <div class="p-5 mb-4 bg-light rounded-3 bg-white">
-        <div class="container-fluid py-0 ">
-
-          <h1 class="mt-1 text-center mb-5">Participants' Answers</h1>
-
-          <p class="text-left my-5">
-            You can find all the answers from participants in these table. 
-            There are four tabs, one for each open question, and you can filter the data using the <b>filter</b> button. 
-            You can also export the original data in excel format clicking on the <b>download</b> button.
-            
-          </p>
-
-        </div>
+      <div class="mx-0 mx-sm-auto bg-white">
+        <div class="card">
+          <div class="card-body px-4">
 
 
 
-        <nav>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <a class="nav-link active" id="nav-coverage-tab" data-bs-toggle="tab" href="#nav-coverage" role="tab" aria-controls="nav-coverage" aria-selected="true">Coverage</a>
-            <a class="nav-link" id="nav-accuracy-tab" data-bs-toggle="tab" href="#nav-accuracy" role="tab" aria-controls="nav-accuracy" aria-selected="false">Accuracy</a>
-            <a class="nav-link" id="nav-usability-tab" data-bs-toggle="tab" href="#nav-usability" role="tab" aria-controls="nav-usability" aria-selected="false">Usability</a>
-            <a class="nav-link" id="nav-characteristics-tab" data-bs-toggle="tab" href="#nav-characteristics" role="tab" aria-controls="nav-characteristics" aria-selected="false">Characteristics</a>
-          </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
+            <!-- <a id="back" href="study1.html">
 
-          <!-- COVERAGE TAB -->
-
-          <div class="tab-pane fade show active" id="nav-coverage" role="tabpanel" aria-labelledby="nav-coverage-tab">
-
-            
-            <div class="panel panel-primary filterable mt-5">
-
-              <div class="row g-0">
-                <!-- use g-0 to remove gutters (extra margin)-->
-    
-                <div class="col-md-6 bg-dark text-white py-2 px-4">
-                  <h3 class="panel-title"></h3>
-                </div>
-                <div class="col-md-6 bg-dark text-white p-2">
-                  <button class="btn btn-default btn-xs btn-filter text-white float-end">
-                    <div class="svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="test"
-                        viewBox="0 0 16 16">
-                        <path
-                          d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
-                      </svg>
-                    </div>
-                    Filter
-                  </button>
-                  <a href="../xls/Answers and corresponding tags coverage.xlsx" download="Answers and corresponding tags coverage.xlsx">
-    
-                    <button class="btn btn-default btn-xs text-white float-end">
-                      <div class="svg">
-    
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                          class="bi bi-download" viewBox="0 0 16 16">
-                          <path
-                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                          <path
-                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                        </svg>
-                      </div>
-                      Download table
-                    </button>
-                  </a>
-                </div>
+              <div class="box-back">
+                <img class="buttons-back" id="previous_button" src="../images/previous-black.png">
+                <h4 class="my-0">Study I</h4>
               </div>
-    
-    
-    
-              <table class="table table-bordered" id="export-coverage">
-                <thead>
-                  <tr class="filters">
-                    <th width="10%;"><input type="text" class="form-control" placeholder="Round" disabled></th>
-                    <th width="55%;"><input type="text" class="form-control" placeholder="Answer" disabled></th>
-                    <th width="35%;"><input type="text" class="form-control" placeholder="Tags" disabled></th>
-                  </tr>
-                </thead>
-            
-              </table>
-            </div>
+            </a> -->
+
+            <br>
+            <h1 class="text-center">Study I: Participants' Answers</h1>
 
 
 
-          </div>
+            <div class="mb-3 mt-4">
 
-          <!-- ACCURACY TAB -->
+              <p class="text-left">
+                You can find all the answers from participants in the following four tables:
+              <ul class="list">
+                <li> <b>Characteristics:</b> contains all the characteristics of the code recommendation that practitioners indicated as important.</li>
+                <li> <b>Coverage</b>: contains the improvements that participants would like to see in terms of coverage of support (i.e., the scenarios in which IDE should provide a recommendation)</li>
+                <li> <b>Accuracy</b>: contains the improvements that participants would like to see in terms of accuracy of the code recommendation.</li>
+                <li> <b>Usability</b>: contains the improvements that participants would like to see in terms of usability.</li>
+              </ul>
+
+                Each table is searchable both for what concerns the answer provided by the participants as well as the "tags" we finally assigned to it, that are basically characteristics extracted from our taxonomy.
 
 
-          <div class="tab-pane fade" id="nav-accuracy" role="tabpanel" aria-labelledby="nav-accuracy-tab">
+              </p>
 
-            <div class="panel panel-primary filterable mt-5">
-
-              <div class="row g-0">
-                <!-- use g-0 to remove gutters (extra margin)-->
-    
-                <div class="col-md-6 bg-dark text-white py-2 px-4">
-                  <h3 class="panel-title"></h3>
-                </div>
-                <div class="col-md-6 bg-dark text-white p-2">
-                  <button class="btn btn-default btn-xs btn-filter text-white float-end">
-                    <div class="svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="test"
-                        viewBox="0 0 16 16">
-                        <path
-                          d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
-                      </svg>
-                    </div>
-                    Filter
-                  </button>
-                  <a href="../xls/Answers and corresponding tags accuracy.xlsx" download="Answers and corresponding tags accuracy.xlsx">
-    
-                    <button class="btn btn-default btn-xs text-white float-end">
-                      <div class="svg">
-    
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                          class="bi bi-download" viewBox="0 0 16 16">
-                          <path
-                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                          <path
-                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                        </svg>
-                      </div>
-                      Download table
-                    </button>
-                  </a>
-                </div>
-              </div>
-    
-    
-    
-              <table class="table table-bordered" id="export-accuracy">
-                <thead>
-                  <tr class="filters">
-                    <th width="10%;"><input type="text" class="form-control" placeholder="Round" disabled></th>
-                    <th width="55%;"><input type="text" class="form-control" placeholder="Answer" disabled></th>
-                    <th width="35%;"><input type="text" class="form-control" placeholder="Tags" disabled></th>
-                  </tr>
-                </thead>
-            
-              </table>
             </div>
 
           </div>
 
-          <!-- USABIILTY TAB -->
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <a class="nav-link active" id="nav-characteristics-tab" data-bs-toggle="tab" href="#nav-characteristics"
+                role="tab" aria-controls="nav-characteristics" aria-selected="true">Characteristics</a>
+              <a class="nav-link" id="nav-coverage-tab" data-bs-toggle="tab" href="#nav-coverage" role="tab"
+                aria-controls="nav-coverage" aria-selected="false">Coverage</a>
+              <a class="nav-link" id="nav-accuracy-tab" data-bs-toggle="tab" href="#nav-accuracy" role="tab"
+                aria-controls="nav-accuracy" aria-selected="false">Accuracy</a>
+              <a class="nav-link" id="nav-usability-tab" data-bs-toggle="tab" href="#nav-usability" role="tab"
+                aria-controls="nav-usability" aria-selected="false">Usability</a>
+            </div>
+          </nav>
 
 
-          <div class="tab-pane fade" id="nav-usability" role="tabpanel" aria-labelledby="nav-usability-tab">
-            <div class="panel panel-primary filterable mt-5">
 
-              <div class="row g-0">
-                <!-- use g-0 to remove gutters (extra margin)-->
-    
-                <div class="col-md-6 bg-dark text-white py-2 px-4">
-                  <h3 class="panel-title"></h3>
-                </div>
-                <div class="col-md-6 bg-dark text-white p-2">
-                  <button class="btn btn-default btn-xs btn-filter text-white float-end">
-                    <div class="svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="test"
-                        viewBox="0 0 16 16">
-                        <path
-                          d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
-                      </svg>
+          <div class="px-5">
+
+            <div class="tab-content" id="nav-tabContent">
+
+              <!-- COVERAGE TAB -->
+
+              <div class="tab-pane fade" id="nav-coverage" role="tabpanel"
+                aria-labelledby="nav-coverage-tab">
+
+
+                <div class="panel panel-primary filterable mt-5">
+
+                  <div class="row g-0">
+                    <!-- use g-0 to remove gutters (extra margin)-->
+
+                    <div class="col-md-6 bg-dark text-white py-2 px-4">
+                      <h3 class="panel-title"></h3>
                     </div>
-                    Filter
-                  </button>
-                  <a href="../xls/Answers and corresponding tags usability.xlsx" download="Answers and corresponding tags usability.xlsx">
-    
-                    <button class="btn btn-default btn-xs text-white float-end">
-                      <div class="svg">
-    
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                          class="bi bi-download" viewBox="0 0 16 16">
-                          <path
-                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                          <path
-                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                        </svg>
-                      </div>
-                      Download table
-                    </button>
-                  </a>
+                    <div class="col-md-6 bg-dark text-white p-2">
+                      <button class="btn btn-default btn-xs btn-filter text-white float-end">
+                        <div class="svg">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="test" viewBox="0 0 16 16">
+                            <path
+                              d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                          </svg>
+                        </div>
+                        Filter
+                      </button>
+                      <a href="../xls/Answers and corresponding tags coverage.xlsx"
+                        download="Answers and corresponding tags coverage.xlsx">
+
+                        <button class="btn btn-default btn-xs text-white float-end">
+                          <div class="svg">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                              class="bi bi-download" viewBox="0 0 16 16">
+                              <path
+                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                              <path
+                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                            </svg>
+                          </div>
+                          Download Table
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+
+
+
+                  <table class="table table-bordered" id="export-coverage">
+                    <thead>
+                      <tr class="filters">
+                        <th width="10%;"><input type="text" class="form-control" placeholder="Round"></th>
+                        <th width="55%;"><input type="text" class="form-control" placeholder="Answer"></th>
+                        <th width="35%;"><input type="text" class="form-control" placeholder="Tags"></th>
+                      </tr>
+                    </thead>
+
+                  </table>
+                </div>
+
+
+
+              </div>
+
+              <!-- ACCURACY TAB -->
+
+
+              <div class="tab-pane fade" id="nav-accuracy" role="tabpanel" aria-labelledby="nav-accuracy-tab">
+
+                <div class="panel panel-primary filterable mt-5">
+
+                  <div class="row g-0">
+                    <!-- use g-0 to remove gutters (extra margin)-->
+
+                    <div class="col-md-6 bg-dark text-white py-2 px-4">
+                      <h3 class="panel-title"></h3>
+                    </div>
+                    <div class="col-md-6 bg-dark text-white p-2">
+                      <button class="btn btn-default btn-xs btn-filter text-white float-end">
+                        <div class="svg">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="test" viewBox="0 0 16 16">
+                            <path
+                              d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                          </svg>
+                        </div>
+                        Filter
+                      </button>
+                      <a href="../xls/Answers and corresponding tags accuracy.xlsx"
+                        download="Answers and corresponding tags accuracy.xlsx">
+
+                        <button class="btn btn-default btn-xs text-white float-end">
+                          <div class="svg">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                              class="bi bi-download" viewBox="0 0 16 16">
+                              <path
+                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                              <path
+                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                            </svg>
+                          </div>
+                          Download Table
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+
+
+
+                  <table class="table table-bordered" id="export-accuracy">
+                    <thead>
+                      <tr class="filters">
+                        <th width="10%;"><input type="text" class="form-control" placeholder="Round"></th>
+                        <th width="55%;"><input type="text" class="form-control" placeholder="Answer"></th>
+                        <th width="35%;"><input type="text" class="form-control" placeholder="Tags"></th>
+                      </tr>
+                    </thead>
+
+                  </table>
+                </div>
+
+              </div>
+
+              <!-- USABIILTY TAB -->
+
+
+              <div class="tab-pane fade" id="nav-usability" role="tabpanel" aria-labelledby="nav-usability-tab">
+                <div class="panel panel-primary filterable mt-5">
+
+                  <div class="row g-0">
+                    <!-- use g-0 to remove gutters (extra margin)-->
+
+                    <div class="col-md-6 bg-dark text-white py-2 px-4">
+                      <h3 class="panel-title"></h3>
+                    </div>
+                    <div class="col-md-6 bg-dark text-white p-2">
+                      <button class="btn btn-default btn-xs btn-filter text-white float-end">
+                        <div class="svg">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="test" viewBox="0 0 16 16">
+                            <path
+                              d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                          </svg>
+                        </div>
+                        Filter
+                      </button>
+                      <a href="../xls/Answers and corresponding tags usability.xlsx"
+                        download="Answers and corresponding tags usability.xlsx">
+
+                        <button class="btn btn-default btn-xs text-white float-end">
+                          <div class="svg">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                              class="bi bi-download" viewBox="0 0 16 16">
+                              <path
+                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                              <path
+                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                            </svg>
+                          </div>
+                          Download Table
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+
+
+
+                  <table class="table table-bordered" id="export-usability">
+                    <thead>
+                      <tr class="filters">
+                        <th width="10%;"><input type="text" class="form-control" placeholder="Round"></th>
+                        <th width="55%;"><input type="text" class="form-control" placeholder="Answer"></th>
+                        <th width="35%;"><input type="text" class="form-control" placeholder="Tags"></th>
+                      </tr>
+                    </thead>
+
+                  </table>
                 </div>
               </div>
-    
-    
-    
-              <table class="table table-bordered" id="export-usability">
-                <thead>
-                  <tr class="filters">
-                    <th width="10%;"><input type="text" class="form-control" placeholder="Round" disabled></th>
-                    <th width="55%;"><input type="text" class="form-control" placeholder="Answer" disabled></th>
-                    <th width="35%;"><input type="text" class="form-control" placeholder="Tags" disabled></th>
-                  </tr>
-                </thead>
-            
-              </table>
-            </div>
-          </div>
 
-          <!-- CHARACTERISTICS TAB -->
+              <!-- CHARACTERISTICS TAB -->
 
 
-          <div class="tab-pane fade" id="nav-characteristics" role="tabpanel" aria-labelledby="nav-characteristics-tab">
-            <div class="panel panel-primary filterable mt-5">
+              <div class="tab-pane fade show active" id="nav-characteristics" role="tabpanel"
+                aria-labelledby="nav-characteristics-tab">
+                <div class="panel panel-primary filterable mt-5">
 
-              <div class="row g-0">
-                <!-- use g-0 to remove gutters (extra margin)-->
-    
-                <div class="col-md-6 bg-dark text-white py-2 px-4">
-                  <h3 class="panel-title"></h3>
-                </div>
-                <div class="col-md-6 bg-dark text-white p-2">
-                  <button class="btn btn-default btn-xs btn-filter text-white float-end">
-                    <div class="svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="test"
-                        viewBox="0 0 16 16">
-                        <path
-                          d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
-                      </svg>
+
+                  <div class="row g-0">
+                    <!-- use g-0 to remove gutters (extra margin)-->
+
+                    <div class="col-md-6 bg-dark text-white py-2 px-4">
+                      <h3 class="panel-title"></h3>
                     </div>
-                    Filter
-                  </button>
-                  <a href="../xls/Answers and corresponding tags characteristics.xlsx" download="Answers and corresponding tags characteristics.xlsx">
-    
-                    <button class="btn btn-default btn-xs text-white float-end">
-                      <div class="svg">
-    
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                          class="bi bi-download" viewBox="0 0 16 16">
-                          <path
-                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                          <path
-                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                        </svg>
-                      </div>
-                      Download table
-                    </button>
-                  </a>
+                    <div class="col-md-6 bg-dark text-white p-2">
+                      <button class="btn btn-default btn-xs btn-filter text-white float-end">
+                        <div class="svg">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="test" viewBox="0 0 16 16">
+                            <path
+                              d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                          </svg>
+                        </div>
+                        Filter
+                      </button>
+                      <a href="../xls/Answers and corresponding tags characteristics.xlsx"
+                        download="Answers and corresponding tags characteristics.xlsx">
+
+                        <button class="btn btn-default btn-xs text-white float-end">
+                          <div class="svg">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                              class="bi bi-download" viewBox="0 0 16 16">
+                              <path
+                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                              <path
+                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                            </svg>
+                          </div>
+                          Download Table
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+
+
+                  <table class="table table-bordered" id="export-characteristics">
+                    <thead>
+                      <tr class="filters">
+                        <th width="10%;"><input type="text" class="form-control" placeholder="Round"></th>
+                        <th width="55%;"><input type="text" class="form-control" placeholder="Answer"></th>
+                        <th width="35%;"><input type="text" class="form-control" placeholder="Tags"></th>
+                      </tr>
+                    </thead>
+
+                  </table>
                 </div>
               </div>
-    
-    
-    
-              <table class="table table-bordered" id="export-characteristics">
-                <thead>
-                  <tr class="filters">
-                    <th width="10%;"><input type="text" class="form-control" placeholder="Round" disabled></th>
-                    <th width="55%;"><input type="text" class="form-control" placeholder="Answer" disabled></th>
-                    <th width="35%;"><input type="text" class="form-control" placeholder="Tags" disabled></th>
-                  </tr>
-                </thead>
-            
-              </table>
+
             </div>
+
           </div>
 
         </div>
@@ -365,22 +425,15 @@
 
     </div>
 
-
   </main>
 
   <footer class="footer mt-auto py-3 bg-light">
     <div class="container">
-      <span class="text-muted">Place sticky footer content here.</span>
+      <span class="text-muted">Replication package for <em>Source Code Recommender Systems:
+        Practitioners' Wishes vs State-of-the-art</em>.</span>
     </div>
   </footer>
-
-
-  <!--<script type="text/javascript">
-    $('#export').DataTable({
-          dom: 'Blfrtip',
-          searching: false, paging: false, info: false,
-  buttons: [ 'excel', 'pdf', 'csv', 'copy' ]
-});</script>-->
+  
   <script src="../js/tag.js"></script>
 
   <script src="../js/tagimportdata.js"></script>

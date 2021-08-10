@@ -38,27 +38,12 @@ range slider
 }
 
 
-
-#programmingLanguages{
-    width: 60%;
-    table-layout: fixed; /* to have the same width for all the columns*/
-}
-
-/* change the size of the table if the screen is too small*/
-@media (max-width:1000px){
-    #programmingLanguages{
-        width: 100%;
-    }
-
-}
-
-#IDEs{
-    width: 100%;
-}
-
 /* centering all the column but the first one horizontally and vertically*/
-#capabilities{text-align: center; }
-#capabilities td { vertical-align: middle;}
+#useful{text-align: center; }
+#useful td { vertical-align: middle;}
+
+#claims{text-align: center; }
+#claims td { vertical-align: middle;}
 
 .description{
     text-align: left!important;
@@ -68,6 +53,8 @@ range slider
 /* each input text is small but the ones with fullsize class*/
 
 .form-control { padding: 0px 0px;  line-height: 10px!important; width: 150px!important; margin-left: 20px!important; margin-top: 2px!important; }
+
+.longer {width: 300px!important}
 
 .fullsize {
     width: 100%!important;
@@ -89,3 +76,27 @@ tbody > tr:last-child > td {
     margin-top: 100px;
 }
 
+/* bold and red for TO COMPLETE*/
+
+.bold-red {
+    color: red;
+    font-weight: bold;
+}
+
+/* colors for code when the background is white*/
+
+.blue{
+    color: rgb(0,18,163);
+}
+
+.green{
+    color: rgb(76,166,48);
+}
+
+.brown{
+    color: rgb(159,89,31);
+}
+
+.lightblue{
+    color: rgb(74,167,169);
+}

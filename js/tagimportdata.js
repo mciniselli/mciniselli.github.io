@@ -1,34 +1,34 @@
 table_data_coverage = [
     [1,"I think that there should be a system where you are writing code and it senses you’re stuck. Then it should step in and give you hints or offer a recommendation to you to help you move on. ", ["Functionality -> Recommendation modality -> Proactive: perceives when developer needs help"]],
-[1,"We have a very basic language without many coding keywords available. But the DO, IF, NEXT, PREV keywords are helpful.", ["Functionality -> Coverage of support -> Language keywords"]],
-[1,"I wish there were more recommendations for data processing.", ["Functionality -> Coverage of support"]],
-[1,"I would like to see coverage expand to more third party libraries. A lot of times I don't get code completion to work if the source file is not a part of my project. ", ["Functionality -> Coverage of support -> Support for third-party libraries"]],
-[1,"For very commonly used \"blocks\" of code, I wouldn't mind more advanced recommendations (ie. templates for common usages of for loops (counters, etc.). ", ["Functionality -> Coverage of support -> Support for multi-token code completion -> Templates"]],
-[1,"The span of recommendations would help make the interface more user friendly.", ["Usability"]],
-[1,"I only use code completion for method calls, and I don't believe IntelliSense suggests variable names.", ["Functionality -> Coverage of support -> Support for identifiers"]],
-[2,"I would like to try an editor able to recommend me variable names", ["Functionality -> Coverage of support -> Support for identifiers"]],
-[2,"Entire line-statements rather than simple templates", ["Functionality -> Coverage of support -> Support for multi-token code completion -> Entire statement(s)"]],
-[2,"There is little support for code statements implementing application logic. Most of the suggestions are related to method invocations, but for example I don't get suggestions for conditional statements in if, for, while, etc. This are also positions in which it's frequent to introduce bugs, thus could be useful to have suggestions.", ["Functionality -> Coverage of support -> Support for multi-token code completion -> Control structures"]],
-[2,"besides method call and imports the support provided is limited improvements are possible for all other types of statements. Cool can be suggesting which asserts as needed as the  code is written to test it.", ["Functionality -> Coverage of support -> Support for multi-token code completion -> Assert statements", "Functionality -> Coverage of support"]],
-[2,"My current stack does not cover templating and skeletons in general. Variable naming is partly supported but with minimum context analysis (which could be an improvement point). Method calling is supported (with decent results also on highly dynamic languages).", ["Functionality -> Coverage of support -> Support for identifiers", "Functionality -> Coverage of support -> Support for multi-token code completion ->  Templates"]],
-[2,"Some IDEs do not autocomplete the body and conditions of certain control structures", ["Functionality -> Coverage of support -> Support for multi-token code completion -> Control structures"]],
-[2,"- I would like the possibility of create my own completions", ["Functionality -> Configurable -> Shortcuts definition"]],
-[2,"I use Eclipse for Java development and VSCode with Pylance for Python. Coverage is slightly better in Eclipse. With Pylance I would like to have a better typing check and more suggestions for chunks of code.", ["Functionality -> Coverage of support -> Support for multi-token code completion -> Entire Statement(s)", "Characteristics of recommended code -> Structural characteristics -> Type checked"]],
-[2,"when writing new functions I often create stubs of the other functions I need to invoke . the IDE could propose implementations for those stubs", ["Functionality -> Coverage of support -> Support for multi-token code completion -> Implementation for stubs"]],
-[2,"support for identifiers is poor", ["Functionality -> Coverage of support -> Support for identifiers"]],
-[2,"identifiers can be supported", ["Functionality -> Coverage of support -> Support for identifiers"]],
-[3,"I would like to see it better able to predict certain often used code more quickly. ", ["Awareness -> Coding history"]],
-[3,"Pretty varying. A decent array of recommended variable names.", ["Functionality -> Coverage of support -> Support for identifiers"]],
-[3,"I'd like to see parameter list generating for method invocations and filling in if and for statements.", ["Functionality -> Coverage of support -> Support for multi-token code completion -> Control structures", "Functionality -> Coverage of support -> Support for multi-token code completion -> Functions' parameters"]],
-[3,"its better to support suggestion of variables, class, method names beside the functions signature. Also generating of a basic template for a template calss is very usefull.", ["Functionality -> Coverage of support -> Support for identifiers", "Functionality -> Coverage of support -> Support for multi-token code completion -> Templates"]],
-[3,"code completion is useful in few scenarios: method invocations, imports. can improve on identifiers and application logic statements", ["Functionality -> Coverage of support -> Support for identifiers", "Functionality -> Coverage of support -> Support for multi-token code completion"]],
-[3,"repetitive code I often implement can be stored and proposed when I'm in a similar situation", ["Awareness -> Coding history"]],
-[3,"I rated the coverage medium, better support for naming variables and methods can help", ["Functionality -> Coverage of support -> Support for identifiers"]],
-[3,"suggest identifiers, checks for good method names</br>whole statement recommendation", ["Functionality -> Coverage of support -> Support for identifiers", "Functionality -> Coverage of support -> Support for multi-token code completion -> Entire statement(s)"]],
-[3,"Provide code related to what I'm actually writing. (e.g. libraries is a good starting point, if I'm using sklearn provide some recommendation about ML stuff)", ["Functionality -> Coverage of support -> Support for third-party libraries", "Awareness -> Coding context"]],
-[3,"Able to autocomplete when mixing languages such as auo-complete and suggestions for inline SQL code when writing database statements in C#", ["Functionality -> Coverage of support -> Multi-lingual code statements (e.g., C# and SQL)"]],
-[3,"I need the code completion tool to have the ability to recommend variable names and method calls. I also like to have hints for syntax errors and additional documentation. These things are important.", ["Functionality -> Coverage of support -> Support for identifiers"]],
-    
+    [1,"We have a very basic language without many coding keywords available. But the DO, IF, NEXT, PREV keywords are helpful.", ["Functionality -> Coverage of support -> Language keywords"]],
+    [1,"I wish there were more recommendations for data processing.", ["Functionality -> Coverage of support"]],
+    [1,"I would like to see coverage expand to more third party libraries. A lot of times I don't get code completion to work if the source file is not a part of my project. ", ["Functionality -> Coverage of support -> Support for third-party libraries"]],
+    [1,"For very commonly used \"blocks\" of code, I wouldn't mind more advanced recommendations (ie. templates for common usages of for loops (counters, etc.). ", ["Functionality -> Coverage of support -> Support for multi-token code completion -> Templates"]],
+    [1,"The span of recommendations would help make the interface more user friendly.", ["Usability"]],
+    [1,"I only use code completion for method calls, and I don't believe IntelliSense suggests variable names.", ["Functionality -> Coverage of support -> Support for identifiers"]],
+    [2,"I would like to try an editor able to recommend me variable names", ["Functionality -> Coverage of support -> Support for identifiers"]],
+    [2,"Entire line-statements rather than simple templates", ["Functionality -> Coverage of support -> Support for multi-token code completion -> Entire statement(s)"]],
+    [2,"There is little support for code statements implementing application logic. Most of the suggestions are related to method invocations, but for example I don't get suggestions for conditional statements in if, for, while, etc. This are also positions in which it's frequent to introduce bugs, thus could be useful to have suggestions.", ["Functionality -> Coverage of support -> Support for multi-token code completion -> Control structures"]],
+    [2,"besides method call and imports the support provided is limited improvements are possible for all other types of statements. Cool can be suggesting which asserts as needed as the  code is written to test it.", ["Functionality -> Coverage of support -> Support for multi-token code completion -> Assert statements", "Functionality -> Coverage of support"]],
+    [2,"My current stack does not cover templating and skeletons in general. Variable naming is partly supported but with minimum context analysis (which could be an improvement point). Method calling is supported (with decent results also on highly dynamic languages).", ["Functionality -> Coverage of support -> Support for identifiers", "Functionality -> Coverage of support -> Support for multi-token code completion ->  Templates"]],
+    [2,"Some IDEs do not autocomplete the body and conditions of certain control structures", ["Functionality -> Coverage of support -> Support for multi-token code completion -> Control structures"]],
+    [2,"- I would like the possibility of create my own completions", ["Functionality -> Configurable -> Shortcuts definition"]],
+    [2,"I use Eclipse for Java development and VSCode with Pylance for Python. Coverage is slightly better in Eclipse. With Pylance I would like to have a better typing check and more suggestions for chunks of code.", ["Functionality -> Coverage of support -> Support for multi-token code completion -> Entire Statement(s)", "Characteristics of recommended code -> Structural characteristics -> Type checked"]],
+    [2,"when writing new functions I often create stubs of the other functions I need to invoke . the IDE could propose implementations for those stubs", ["Functionality -> Coverage of support -> Support for multi-token code completion -> Implementation for stubs"]],
+    [2,"support for identifiers is poor", ["Functionality -> Coverage of support -> Support for identifiers"]],
+    [2,"identifiers can be supported", ["Functionality -> Coverage of support -> Support for identifiers"]],
+    [3,"I would like to see it better able to predict certain often used code more quickly. ", ["Awareness -> Coding history"]],
+    [3,"Pretty varying. A decent array of recommended variable names.", ["Functionality -> Coverage of support -> Support for identifiers"]],
+    [3,"I'd like to see parameter list generating for method invocations and filling in if and for statements.", ["Functionality -> Coverage of support -> Support for multi-token code completion -> Control structures", "Functionality -> Coverage of support -> Support for multi-token code completion -> Functions' parameters"]],
+    [3,"its better to support suggestion of variables, class, method names beside the functions signature. Also generating of a basic template for a template calss is very usefull.", ["Functionality -> Coverage of support -> Support for identifiers", "Functionality -> Coverage of support -> Support for multi-token code completion -> Templates"]],
+    [3,"code completion is useful in few scenarios: method invocations, imports. can improve on identifiers and application logic statements", ["Functionality -> Coverage of support -> Support for identifiers", "Functionality -> Coverage of support -> Support for multi-token code completion"]],
+    [3,"repetitive code I often implement can be stored and proposed when I'm in a similar situation", ["Awareness -> Coding history"]],
+    [3,"I rated the coverage medium, better support for naming variables and methods can help", ["Functionality -> Coverage of support -> Support for identifiers"]],
+    [3,"suggest identifiers, checks for good method names</br>whole statement recommendation", ["Functionality -> Coverage of support -> Support for identifiers", "Functionality -> Coverage of support -> Support for multi-token code completion -> Entire statement(s)"]],
+    [3,"Provide code related to what I'm actually writing. (e.g. libraries is a good starting point, if I'm using sklearn provide some recommendation about ML stuff)", ["Functionality -> Coverage of support -> Support for third-party libraries", "Awareness -> Coding context"]],
+    [3,"Able to autocomplete when mixing languages such as auo-complete and suggestions for inline SQL code when writing database statements in C#", ["Functionality -> Coverage of support -> Multi-lingual code statements (e.g., C# and SQL)"]],
+    [3,"I need the code completion tool to have the ability to recommend variable names and method calls. I also like to have hints for syntax errors and additional documentation. These things are important.", ["Functionality -> Coverage of support -> Support for identifiers"]],
+        
 
 
 ];
@@ -65,23 +65,23 @@ table_data_accuracy = [
 
 table_data_usability = [
     [1,"To me the one I use is very friendly. I think that it should be that way as it’s there to help you and not hinder you. ", ["Usability -> Non-invasive"]],
-[1,"Not for beginners that is for sure", ["Usability -> Intuitive"]],
-[1,"I don't have many issues with the current usability of my code completion tools. I like them to be non-invasive, so that they aren't a distraction when I'm not using them. Generally they are good at this.", ["Usability -> Non-invasive"]],
-[1,"The UI is simple, providing several options and a single click completion", ["Functionality -> Configurable", "Usability -> No overhead while coding"]],
-[1,"The user interface has to be designed in a way that any normal user can use and not just a programmer.", ["Usability -> Intuitive"]],
-[1,"It's very user friendly and works out of the box, although I might suggest that it doesn't start making suggestions quite so fast. ", ["Usability -> High responsiveness"]],
-[2,"Integrated in the IDE, non-intrusive with the developer's flow. Recommendations should be easy to see but not overwhelming", ["Usability -> Non-invasive", "Usability -> Integrated with IDE"]],
-[2,"It's already very good. If the suggestions are smarter and based on past history, I would like to have the explanation for a suggestion (why I'm showing that based on what you did).", ["Functionality -> Provides additional information ->  Provides rationale justifying the recommendation", "Awareness -> Coding history"]],
-[2,"better support for refactoring", ["Functionality -> Coverage of support -> Autocomplete refactorings"]],
-[2,"overall ok, can improve with customisation ", ["Functionality -> Configurable"]],
-[2,"examples of API/method usage can be shown", ["Functionality -> Provides additional information -> Documentation -> Code example"]],
-[2,"The IDE should recommend something without obstructing the view of the developer, and without forcing the developer to focus on the recommendation (for example, if I start typing something, and the IDE would like to suggest me something, I need to have a way to ignore and continue). ", ["Usability -> Non-invasive"]],
-[3,"I'd like to see similar systems of google's recent smart compose where part of the recommendation is greyed out while you are typing showing what you could add. Navigating a bunch of options in a list, especially for very simple things becomes very annoying.", ["Usability -> Intuitive"]],
-[3,"Integrated in the IDE like suggestions for code completion", ["Usability -> Integrated with IDE"]],
-[3,"It's fine as long as it won't interfere with my normal coding.", ["Usability -> Non-invasive"]],
-[3,"In functions, show the different signature of the function, readablity of the suggestion and ease of use in case of control and choose between suggestion is very important and i can rate the tools and plugin with score 70. </br>Also the ability to edit most different part of a generated code such as refactor feature to rename a generated variable name and the smartness of the feature is another case that increase the usability of the tools. I rate my exprienced tools  and IDEs plugin up to 60 in the case.", ["Characteristics of recommended code -> Code Quality -> High Readability and Understandability", "Usability -> Intuitive"]],
-[3,"I don't have huge improvements to propose, the user interface should be as clever as possible, also with a description of the recommended method and/or function. ", ["Functionality -> Provides additional information -> Documentation -> Commented code", "Usability"]],
-[3,"It would be nice to have the option to mark completions as unhelpful (but not by default) so that I do not see less useful ones.", ["Functionality -> Self-improving based on feedback"]],
+    [1,"Not for beginners that is for sure", ["Usability -> Intuitive"]],
+    [1,"I don't have many issues with the current usability of my code completion tools. I like them to be non-invasive, so that they aren't a distraction when I'm not using them. Generally they are good at this.", ["Usability -> Non-invasive"]],
+    [1,"The UI is simple, providing several options and a single click completion", ["Functionality -> Configurable", "Usability -> No overhead while coding"]],
+    [1,"The user interface has to be designed in a way that any normal user can use and not just a programmer.", ["Usability -> Intuitive"]],
+    [1,"It's very user friendly and works out of the box, although I might suggest that it doesn't start making suggestions quite so fast. ", ["Usability -> High responsiveness"]],
+    [2,"Integrated in the IDE, non-intrusive with the developer's flow. Recommendations should be easy to see but not overwhelming", ["Usability -> Non-invasive", "Usability -> Integrated with IDE"]],
+    [2,"It's already very good. If the suggestions are smarter and based on past history, I would like to have the explanation for a suggestion (why I'm showing that based on what you did).", ["Functionality -> Provides additional information ->  Provides rationale justifying the recommendation", "Awareness -> Coding history"]],
+    [2,"better support for refactoring", ["Functionality -> Coverage of support -> Autocomplete refactorings"]],
+    [2,"overall ok, can improve with customisation ", ["Functionality -> Configurable"]],
+    [2,"examples of API/method usage can be shown", ["Functionality -> Provides additional information -> Documentation -> Code example"]],
+    [2,"The IDE should recommend something without obstructing the view of the developer, and without forcing the developer to focus on the recommendation (for example, if I start typing something, and the IDE would like to suggest me something, I need to have a way to ignore and continue). ", ["Usability -> Non-invasive"]],
+    [3,"I'd like to see similar systems of google's recent smart compose where part of the recommendation is greyed out while you are typing showing what you could add. Navigating a bunch of options in a list, especially for very simple things becomes very annoying.", ["Usability -> Intuitive"]],
+    [3,"Integrated in the IDE like suggestions for code completion", ["Usability -> Integrated with IDE"]],
+    [3,"It's fine as long as it won't interfere with my normal coding.", ["Usability -> Non-invasive"]],
+    [3,"In functions, show the different signature of the function, readablity of the suggestion and ease of use in case of control and choose between suggestion is very important and i can rate the tools and plugin with score 70. </br>Also the ability to edit most different part of a generated code such as refactor feature to rename a generated variable name and the smartness of the feature is another case that increase the usability of the tools. I rate my exprienced tools  and IDEs plugin up to 60 in the case.", ["Characteristics of recommended code -> Code Quality -> High Readability and Understandability", "Usability -> Intuitive"]],
+    [3,"I don't have huge improvements to propose, the user interface should be as clever as possible, also with a description of the recommended method and/or function. ", ["Functionality -> Provides additional information -> Documentation -> Commented code", "Usability"]],
+    [3,"It would be nice to have the option to mark completions as unhelpful (but not by default) so that I do not see less useful ones.", ["Functionality -> Self-improving based on feedback"]],
     
 
 
@@ -162,6 +162,7 @@ table_data=[ table_data_coverage, table_data_accuracy, table_data_usability, tab
 
 function create_list(list) {
 
+    /* create the unordered list with all the characteristics*/
     var ul = document.createElement("ul");
 
     for (let i = 0; i < list.length; i++) {
@@ -189,6 +190,7 @@ for (let t=0; t<tabs.length; t++){
     var tableBody = document.createElement('tbody');
 
     table_data[t].forEach(function (rowData) {
+        /* create all the rows*/
         var row = document.createElement('tr');
 
 
@@ -201,6 +203,11 @@ for (let t=0; t<tabs.length; t++){
             else {
 
                 cell.innerHTML = create_list(cellData);
+
+            }
+
+            if (i==0){ /* centering the round column*/
+                cell.classList.add("text-center");
 
             }
 

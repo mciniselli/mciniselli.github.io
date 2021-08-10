@@ -1,5 +1,6 @@
 /*
-Please consider that the JS part isn't production ready at all, I just code it to show the concept of merging filters and titles together !
+Code from https://codepen.io/eliseojopiajr/pen/WPNMmB
+Function to filter the data in the table
 */
 $(document).ready(function(){
     $('.filterable .btn-filter').click(function(){

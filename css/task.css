@@ -1,96 +1,41 @@
+/* download button on the right */
+.push {
+  margin-left: auto;
+}
 
-  .carousel-control-prev,
-  .carousel-control-next {
-    background: none;
-    color: "red";
-    border: none;
-  }
+/* formatting the Task <X> text and the buttons*/
+.title{
+  display: inline-block;
+}
 
-  .carousel-control-prev {
-    /* margin-left: -150px; */
-    color: "black";
-  }
-
-  .carousel-control-next {
-    /* margin-right: -150px; */
-    color: black;
-  }
-
-  /* set the height of the carousel */
-
-  .carousel-item {
-    height: 400px;
-  }
-
-  .inner{
-      height: 400px;
-  }
-/* arrow customization */
-
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    height: 100px;
-    width: 100px;
-    outline: black;
-    background-size: 100%, 100%;
-    border-radius: 50%;
-    /*border: 1px solid white;*/
-  }
-
-  .carousel-control-next-icon {
-
-    background-image: url("../images/next.png");
-  }
-
-  .carousel-control-prev-icon {
+.box {
+  display: flex;
+  align-items:center;
+  justify-content: center;
   
-    background-image: url("../images/previous.png");
-  }
-
-  .carousel-control-next-icon:after {
-    /*content: '>';*/
-    font-size: 55px;
-    color: white;
-  }
-
-  .carousel-control-prev-icon:after {
-    /*content: '<';*/
-    font-size: 55px;
-    color: red;
-  }
-
-  span.bold-red {
-    color: red;
-    font-weight: bold;
 }
 
-span.bold {
-    font-weight: bold;
+.buttons{
+width: 30px;
+margin-left: 30px;
+margin-right: 30px;
+vertical-align: middle;
 }
 
-.white{
+/* formatting the tab navigation bar */
+
+#nav-tab .active {
+  background-color: rgb(34, 37, 41)!important;
+  color: white!important;
+  border: 1px solid rgb(34, 37, 41);
+}
+
+#nav-tab a:not(active) {
   background-color: white!important;
+  color: black!important;
 }
 
-
-.task-description{
-  background-color: rgb(193, 193, 193)!important;
-  margin-top: 40px;
-}
-
-.carousel-grey{
-  background-color: rgb(193, 193, 193)!important;
-}
-
-pre, code {
-  padding:0!important;
-  margin:0!important;
-}
-
-#validator li {
-	list-style-type: none;
-  padding:5px;
-}
+/* set the margin between the two boxes*/
 
 .mright{
   margin-right: 10px!important;
@@ -100,40 +45,72 @@ pre, code {
   margin-left: 10px!important;
 }
 
-.buttons{
-width: 30px;
-margin-left: 30px;
-margin-right: 30px;
+/* formatting for the code*/
+code{
+  padding:0px!important;
+}
+pre {
+  margin-bottom: 0px!important;
 }
 
-.title{
-  display: inline-block;
+/* set style for verification section*/
+
+ul{
+  padding:0;
 }
 
-.prediction{
-  margin-left: 30%;
-  margin-top: 50px;
-  height: 100px;
-  overflow-y:scroll;
-  direction:ltr;
-
+ul img{
+  margin-right: 10px;;
 }
 
-#description-area{
-  height: 250px!important;
+#validator li {
+	list-style-type: none;
+  padding:5px;
 }
 
 .validate_choice{
   display: inline-block;
 }
 
-  /* test commands */
-/*
+.answer {
+  display: flex;
+  align-items:center;
+  
+}
 
-  body {
-    background-color: #ddd;
-  }  
-  div {
-    outline: 1px solid red;
+.answer_image{
+  width: 30px;
+  margin-right: 15px;
+  vertical-align: middle;
   }
-  */
+
+ /* set style for TO COMPELTE token in verification section*/
+
+.bold-red-verification {
+  color: red;
+  font-weight: bold;
+  display:inline-block;
+  overflow: visible;
+ margin-bottom: 0px;
+
+}
+
+
+
+/* formatting the tabs with the prediction (e.g., scrolling bar on the left)*/
+
+.prediction{
+  margin-left: 15px;
+  margin-right:15px;
+  margin-top: 0px;
+  height: 300px;
+  overflow-y:auto;
+  direction:rtl;
+
+}
+
+.left{
+  direction:ltr;
+  margin-left: 20px;
+
+}

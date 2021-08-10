@@ -23,11 +23,18 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
+  <!-- highlight.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+
+  <!-- dracula theme-->
+  <link rel="stylesheet" href="../css/dracula.css">
+
   <!-- Custom styles for this template -->
   <link href="../css/sticky-footer-navbar.css" rel="stylesheet">
 
 
-  <link href="../css/survey1.css" rel="stylesheet">
+  <link href="../css/survey2.css" rel="stylesheet">
 
 
 </head>
@@ -54,12 +61,21 @@
                 Study I
               </a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="../studyI/study1.html">Study I</a></li>
-                <li><a class="dropdown-item" href="../studyI/literaturesurvey1.html">Characteristics from Literature</a></li>
-                <li><a class="dropdown-item" href="../studyI/survey1.html">Survey I</a></li>
+                <!-- <li><a class="dropdown-item" href="../studyI/study1.html">Home</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li> -->
+                <li><a class="dropdown-item" href="../studyI/survey1.html">Survey Questions</a></li>
+                <li><a class="dropdown-item" href="../studyI/literaturesurvey1.html">Characteristics From Literature</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="../studyI/demographic.html">Demographics</a></li>
+
+                <li><a class="dropdown-item" href="../studyI/tag.html">Participants' Answers</a></li>
+
                 <li><a class="dropdown-item" href="../studyI/taxonomy.html">Taxonomy</a></li>
-                <li><a class="dropdown-item" href="../studyI/tag.html">Tags</a></li>
-                <li><a class="dropdown-item" href="../studyI/demographic.html">Demographic Information</a></li>
 
               </ul>
             </li>
@@ -70,9 +86,18 @@
                 Study II
               </a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="study2.html">Study II</a></li>
-                <li><a class="dropdown-item" href="survey2.html">Survey II</a></li>
-                <li><a class="dropdown-item" href="task.html">Tasks</a></li>
+                <!-- <li><a class="dropdown-item" href="study2.html">Home</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li> -->
+                <li><a class="dropdown-item" href="survey2.html">Survey Questions</a></li>
+                <li><a class="dropdown-item" href="task.html">Survey Tasks</a></li>
+								<li><a class="dropdown-item" href="techniques.html">Code Recommendation Techniques</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="results.html">Results</a></li>
+
               </ul>
             </li>
 
@@ -94,26 +119,43 @@
 
       <div class="mx-0 mx-sm-auto">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body px-4">
+
+
+            <!-- <a id="back" href="study2.html">
+
+              <div class="box-back">
+                <img class="buttons-back" id="previous_button" src="../images/previous-black.png">
+                <h4 class="my-0">Study II</h4>
+              </div>
+            </a> -->
+
+            <br>
+            <h1 class="text-center">Study II: Survey Questions</h1>
+
+
             <div id="form">
 
               <!-- <h1 class="mt-5 text-center survey-title">Study I: Relevant characteristics of code recommenders</h1> -->
 
-              <h1 class="mt-1 text-center">Study I: the survey for the participants</h1>
 
 
-              <p class="text-left mt-5">
-                Thanks for taking part in this <b>anonymous survey</b>. Our goal is to understand the characteristics of
-                source code recommender systems that are important for developers. </br> With <b>source code recommender
-                  systems</b>, we refer to approaches that can be used to automatically suggest code to developers while
-                they are writing code. </br>The classic example in this context is the code completion feature
-                implemented in several IDEs. However, some tools go beyond the classic code completion task and
-                recommend longer pieces of code to developers to autocomplete a task they perform (see, e.g.,
-                <a href="https://vimeo.com/412328071" target="_blank">https://vimeo.com/412328071</a>).
-                </br></br>In the following, we use the term "code completion" to refer both to standard code completion
-                tools as well as to more advanced tools recently proposed. Also, we use the term "recommended code to
-                refer to the code automatically generated by the code completion tool. The survey is designed to take no
-                more than <b>10 minutes</b>.
+              <p class="mt-0" style="text-align: justify;">
+                Thanks for taking part in this <b>anonymous survey</b>. Please read carefully these instructions. In the
+                survey, you will be asked to comprehend up to 30 Python code snippets having a maximum length of 50
+                lines of code. If you don't have experience in Python, please don't start this survey.
+                Each code snippet is accompanied by a short explanation about what it is meant to implement. A question
+                will be used to check if you successfully comprehended each of the snippets: the shown code snippet
+                misses a few lines of code and we'll show you different options to complete it. If you pick the correct
+                one, we know you comprehended the code.</br></br>
+                For each code snippet you successfully comprehend, a few additional questions will be asked: We will
+                show you up to four code suggestions generated by automated tools with the goal of autocompleting the
+                part that was missing in the snippet. You are required to judge which of those (if any) would have been
+                the most useful to complete the programming task and to explain why you believe so (through one open and
+                two multiple-choice questions). The survey is designed to take <b>around 15 minutes per task</b> (time
+                can
+                change based on your ability in comprehending Python code). Feel free to complete how many tasks as you
+                want.
               </p>
 
               <hr />
@@ -131,7 +173,7 @@
               <div class="question mt-2">
 
 
-                <p class="title"><strong>Q1: which role better describes your current job position</strong>
+                <p class="title"><strong>Q1: Which role better describes your current job position</strong>
                 </p>
 
                 <div class="form-check mb-2">
@@ -186,11 +228,33 @@
               -->
               <div class="question">
 
-                <p class="title"><strong>Q2: How many years of experience do you have?</strong></p>
+                <p class="title"><strong>Q2: How many years of programming experience do you have?</strong></p>
 
 
                 <!-- cool slider: https://codepen.io/mayuMPH/pen/ZjxGEY -->
-                <input type="range" class="form-range" min="0" max="40" step="1" id="rangeYears">
+                <input type="range" class="form-range" min="0" max="40" step="1" id="rangeYears" value="5">
+
+                <div class="box-minmax">
+                  <span>0</span><span>40</span>
+                </div>
+
+              </div>
+
+              <hr />
+
+
+              <!-- 
+
+                QUESTION 3
+
+              -->
+              <div class="question">
+
+                <p class="title"><strong>Q3: How many years of Python experience do you have?</strong></p>
+
+
+                <!-- cool slider: https://codepen.io/mayuMPH/pen/ZjxGEY -->
+                <input type="range" class="form-range" min="0" max="40" step="1" id="rangeYears" value="5">
 
                 <div class="box-minmax">
                   <span>0</span><span>40</span>
@@ -202,863 +266,318 @@
 
               <!-- 
 
-                QUESTION 3
-
-              -->
-
-
-              <div class="question">
-
-                <p class="title"><strong>Q3: Which programming language(s) do you mostly use?</strong></p>
-
-
-                <table class="table" id="programmingLanguages">
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
-                          <label class="form-check-label" for="Q31">
-                            Go
-                          </label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
-                          <label class="form-check-label" for="Q32">
-                            Ktolin
-                          </label>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-
-                      <td>
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
-                          <label class="form-check-label" for="Q33">
-                            Ruby
-                          </label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
-                          <label class="form-check-label" for="Q34">
-                            PHP
-                          </label>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-
-                      <td>
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
-                          <label class="form-check-label" for="Q35">
-                            C++
-                          </label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
-                          <label class="form-check-label" for="Q36">
-                            C#
-                          </label>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-
-                      <td>
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
-                          <label class="form-check-label" for="Q37">
-                            Visual Basic
-                          </label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
-                          <label class="form-check-label" for="Q38">
-                            Python
-                          </label>
-                        </div>
-                      </td>
-
-                    </tr>
-                    <tr>
-
-
-                      <td>
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
-                          <label class="form-check-label" for="Q39">
-                            C
-                          </label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
-                          <label class="form-check-label" for="Q310">
-                            Java
-                          </label>
-                        </div>
-                      </td>
-
-                    </tr>
-                    <tr>
-
-                      <td>
-
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
-                          <label class="form-check-label" for="Q311">
-                            Cobol
-                          </label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
-                          <label class="form-check-label" for="Q312">
-                            R
-                          </label>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-
-                      <td>
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
-                          <label class="form-check-label" for="Q313">
-                            JavaScript
-                          </label>
-                        </div>
-                      </td>
-                      <td>
-
-                        <div class="input-group">
-                          <span class="form-check mb-2">
-                            <input class="form-check-input" type="checkbox" name="exampleForm" id="PL" />
-                            <label class="form-check-label" for="Q314">
-                              Other (comma separated)
-                            </label>
-                          </span>
-                          <span class="form-box"><input type="text" class="form-control" aria-label="..."></span>
-                        </div>
-
-
-
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-
-              </div>
-
-              <!-- this question is not present in the results
-              <hr />
-
-              <p class="title"><strong>Q4: Which IDE do you mostly use?</strong></p>
-
-
-              <table class="table" id="IDEs">
-                <tbody>
-                  <tr>
-                    <td>
-                      <p class="text-left">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
-                        <label class="form-check-label" for="radioExample1">
-                          Eclipse
-                        </label>
-                      </p>
-                    </td>
-                    <td>
-                      <p class="text-left">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
-                        <label class="form-check-label" for="radioExample1">
-                          IntelliJ IDEA
-                        </label>
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-
-                    <td>
-                      <p class="text-left">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
-                        <label class="form-check-label" for="radioExample1">
-                          CLion
-                        </label>
-                      </p>
-                    </td>
-                    <td>
-                      <p class="text-left">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
-                        <label class="form-check-label" for="radioExample1">
-                          PyCharm
-                        </label>
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-
-                    <td>
-                      <p class="text-left">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
-                        <label class="form-check-label" for="radioExample1">
-                          VSCode
-                        </label>
-                      </p>
-                    </td>
-                    <td>
-                      <p class="text-left">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
-                        <label class="form-check-label" for="radioExample1">
-                          NetBeans
-                        </label>
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-
-                    <td>
-                      <p class="text-left">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
-                        <label class="form-check-label" for="radioExample1">
-                          IDLE
-                        </label>
-                      </p>
-                    </td>
-                    <td>
-                      <p class="text-left">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
-                        <label class="form-check-label" for="radioExample1">
-                          XCode
-                        </label>
-                      </p>
-                    </td>
-
-                  </tr>
-                  <tr>
-
-
-                    <td>
-                      <p class="text-left">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
-                        <label class="form-check-label" for="radioExample1">
-                          WebStorm
-                        </label>
-                      </p>
-                    </td>
-                    <td>
-                      <p class="text-left">
-                        <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
-                        <label class="form-check-label" for="radioExample1">
-                          Visual Studio
-                        </label>
-                      </p>
-                    </td>
-
-                  </tr>
-
-
-                  <td>
-                    <p class="text-left">
-                      <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
-                      <label class="form-check-label" for="radioExample1">
-                        PhpStorm
-                      </label>
-                    </p>
-                  </td>
-                  <td>
-
-                    <p class="text-left">
-                      <input class="form-check-input" type="checkbox" name="exampleForm" id="radioExample1" />
-                      <label class="form-check-label" for="radioExample1">
-                        Other (comma separated)
-                      </label>
-                    </p>
-
-                    <p class="text-left">
-                      <input type="text" class="form-control" aria-label="...">
-
-                    </p>
-
-
-
-                  </td>
-                  </tr>
-                </tbody>
-              </table>
-
-            -->
-
-              <hr />
-
-              <!-- 
-
                 QUESTION 4
 
               -->
-              <div class="question">
-                <p class="title"><strong>Q4: which tool(s) or plugin(s) do you use to get code
-                    recommendations?</strong></p>
+              <h4 style="color: grey;"><strong>In the following we present one example of task as it was proposed to participants in the survey. The complete list of tasks is available <a href="task.html" target="_blank">here</a>. </strong></h4>
 
+              <div class="question" style="text-align: justify;">
+                <p class="title"><strong>Please carefully read the task description embedded in the following code
+                    snippet (comment on top).</strong></p>
+
+                <div class="mb-4">Let's
+                  assume that you are working on such a task and you developed the code below. Take the time you need
+                  to comprehend and understand it. Note that the code is incomplete since it is missing specific code
+                  tokens/statements. The missing part is highlighted by the <span class="bold-red">&lt;TO COMPLETE&gt;
+                  </span> tag. Once you've understood
+                  the code, please select, among the three options shown below, which of them would correctly
+                  finalize the programming task. If you are not able to understand the code, please select "<em>I
+                    don't
+                    know how to complete the above code</em>" and move on to the following comprehension task.</div>
+
+
+                <pre class="python mb-0"><code id="snippet1" class="px-4"># Youtube Video to Audio Converter
+# Using pytube module the program asks to the user to insert 
+# the URL of a youtube video.
+# Then it downloads the audio and it saves it as mp3 file.
+
+from pytube import YouTube
+import pytube
+import os
+              
+def download_video():
+  video_url = input('Enter YouTube video URL: ')
+                
+  if os.name == 'nt':
+    path = os.getcwd() + '\\'
+  else:
+    path = os.getcwd() + '/'
+
+  name = pytube.extract.video_id(video_url)
+  remoteStreams = YouTube(video_url).streams
+  targetStream = remoteStreams.filter(only_audio=True).first()
+  &lt;TO COMPLETE&gt; 
+  location = path + name + '.mp4'
+  renametomp3 = path + name + '.mp3'
+
+  if os.name == 'nt':
+    os.system('ren {0} {1}'. format(location, renametomp3))
+  else:
+    os.system('mv {0} {1}'. format(location, renametomp3))
+
+if __name__ == '__main__':
+  download_video()
+
+                    </code></pre>
+
+                <p class="title mt-4"><strong>Q4: Which of the following choices correctly complete the task?</strong></p>
 
                 <div class="form-check mb-2">
-                  <input class="form-check-input" type="radio" name="toolplugin" />
+                  <input class="form-check-input" type="radio" name="rightcode" />
                   <label class="form-check-label" for="Q41">
-                    The default one in the IDE
+                    <pre>targetStream.download(filename=name)</pre>
                   </label>
                 </div>
-
-
-                <div class="input-group">
-                  <span class="form-check mb-2">
-                    <input class="form-check-input" type="radio" name="exampleForm" id="toolplugin" />
-                    <label class="form-check-label" for="Q41">
-                      IDE's plugins (Type the plugin list separated by a comma)
-                    </label>
-                  </span>
-                  <span class="form-box"><input type="text" class="form-control" aria-label="..."></span>
-                </div>
-
-                <div class="input-group">
-                  <span class="form-check mb-2">
-                    <input class="form-check-input" type="radio" name="exampleForm" id="toolplugin" />
-                    <label class="form-check-label" for="Q42">
-                      Other tools (Type the names of the tools separated by a comma)
-                    </label>
-                  </span>
-                  <span class="form-box"><input type="text" class="form-control" aria-label="..."></span>
-                </div>
-
-                <div class="input-group">
-                  <span class="form-check mb-2">
-                    <input class="form-check-input" type="radio" name="exampleForm" id="toolplugin" />
-                    <label class="form-check-label" for="Q43">
-                      Both IDE's plugins and tools (Type the list separated by a comma)
-                    </label>
-                  </span>
-                  <span class="form-box"><input type="text" class="form-control" aria-label="..."></span>
-                </div>
-
                 <div class="form-check mb-2">
-                  <input class="form-check-input" type="radio" name="toolplugin" />
-                  <label class="form-check-label" for="Q44">
-                    I do not use code recommender systems (Quit the survey)
+                  <input class="form-check-input" type="radio" name="rightcode" />
+                  <label class="form-check-label" for="Q42">
+                    <pre>print(targetStream)</pre>
                   </label>
                 </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="rightcode" />
+                  <label class="form-check-label" for="Q43">
+                    <pre>targetStream.check_if_exists(video_url)</pre>
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="rightcode" />
+                  <label class="form-check-label" for="Q44">
+                    <em>I don't know how to complete the above code</em>
+                  </label>
+                </div>
+
               </div>
 
 
+
               <hr />
+
+              <h4 style="color: grey;"><strong>If the user selects the wrong answer or "I don't know", we propose him a
+                  new task. Otherwise, the survey proceeds with the following questions:</strong></h4>
 
               <!-- 
 
                 QUESTION 5
 
               -->
-              <div class="question">
-                <p class="title"><strong>Q5: when typing code, how often do you exploit code
-                    recommendations?</strong></p>
+              <div class="question" style="text-align: justify;">
+                <p class="title"><strong>Well done!</strong></p>
 
-
-                <div class="form-check mb-2">
-                  <input class="form-check-input" type="radio" name="explot" />
-                  <label class="form-check-label" for="Q51">
-                    Always (i.e., every time a recommendation is available I check it)
-                  </label>
+                <div class="mb-4">
+                  You picked the right option (now reported in red in the code below). Let's assume that the red part
+                  was still missing (as in the code shown before). Let's also assume that four different tools running
+                  in your IDE recommended you how to automatically complete the missing code. Below you can see the four
+                  recommendations they generated. Which one would have been more useful to speed up the implementation
+                  of the missing code? Note that also solutions that are not 100% correct might be useful to reach the
+                  final code. If you believe that none of them would have been useful, select "<em>None of them</em>".
                 </div>
 
+                <pre class="python mb-0"><code id="snippet2" class="px-4"># Youtube Video to Audio Converter
+# Using pytube module the program asks to the user to insert 
+# the URL of a youtube video.
+# Then it downloads the audio and it saves it as mp3 file.
+
+from pytube import YouTube
+import pytube
+import os
+              
+def download_video():
+  video_url = input('Enter YouTube video URL: ')
+                
+  if os.name == 'nt':
+    path = os.getcwd() + '\\'
+  else:
+    path = os.getcwd() + '/'
+
+  name = pytube.extract.video_id(video_url)
+  remoteStreams = YouTube(video_url).streams
+  targetStream = remoteStreams.filter(only_audio=True).first()
+  &lt;TO COMPLETE&gt; 
+  location = path + name + '.mp4'
+  renametomp3 = path + name + '.mp3'
+
+  if os.name == 'nt':
+    os.system('ren {0} {1}'. format(location, renametomp3))
+  else:
+    os.system('mv {0} {1}'. format(location, renametomp3))
+
+if __name__ == '__main__':
+  download_video()
+                  
+                                      </code></pre>
+
+
+
+
+                <p class="title mt-4"><strong>Q5: Select the suggestion most useful in the above task</strong></p>
 
                 <div class="form-check mb-2">
-                  <input class="form-check-input" type="radio" name="explot" />
-                  <label class="form-check-label" for="Q52">
-                    Most of times (i.e., more than 50% of times a recommendation is available I check it)
+                  <input class="form-check-input" type="radio" name="rightcode" />
+                  <label class="form-check-label" for="Q41">
+                    <pre>path=targetStream.Path</pre>
                   </label>
                 </div>
-
-
                 <div class="form-check mb-2">
-                  <input class="form-check-input" type="radio" name="explot" />
-                  <label class="form-check-label" for="Q53">
-                    Occasionally (i.e., less than 50% of times a recommendation is available, I check it)
+                  <input class="form-check-input" type="radio" name="rightcode" />
+                  <label class="form-check-label" for="Q42">
+                    <pre>
+<span class="blue">def</span> <span class="green"> main_work_subdirs</span>(gl):
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">for</span> root, dirs, files in os.walk(gl[<span class="brown">'pwd'</span>]):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dirs.sort()
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">if</span> root == gl[<span class="brown">'pwd'</span>]:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">for</span> d2i <span class="blue">in</span> dirs:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">print</span>(d2i)
+</pre>
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="rightcode" />
+                  <label class="form-check-label" for="Q43">
+                    <pre><span class="lightblue">None</span></pre>
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="rightcode" />
+                  <label class="form-check-label" for="Q44">
+                    <pre>urllib.request.URLopener()</pre>
                   </label>
                 </div>
 
                 <div class="input-group">
                   <span class="form-check mb-2">
-                    <input class="form-check-input" type="radio" name="explot" />
-                    <label class="form-check-label" for="Q54">
-                      Depends (please explain)
+                    <input class="form-check-input" type="radio" name="rightcode" />
+                    <label class="form-check-label" for="Q45">
+                      None of them (Justify why)
                     </label>
                   </span>
-                  <span class="form-box"><input type="text" class="form-control" aria-label="..."></span>
+                  <span class="form-box"><input type="text" class="form-control longer" aria-label="..."></span>
                 </div>
-              </div>
+                <hr />
 
-              <hr />
+                <h4 style="color: grey;"><strong>Let's assume that the developer selected path=targetStream.Path as the most useful recommendation, 
+                  the survey proceeds with the following questions:</strong></h4>
 
-              <!-- 
+                <!-- 
 
                 QUESTION 6
 
               -->
-              <div class="question">
+                <div class="question">
 
-                <p class="title"><strong>Q6: What kind of "code tokens" do you use to trigger code
-                    recommenders?</strong></p>
+                  <p class="title mt-4"><strong>Q6: Please justify why you selected as the most
+                      useful recommendation the following recommendation:</strong>
+                  <pre>path=targetStream.Path</pre>
+                  </p>
 
+                  <p class="text-left mt-3">
+                    <input type="text" class="form-control fullsize" aria-label="...">
 
-                <table class="table" id="IDEs">
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" />
-                          <label class="form-check-label" for="Q61">
-                            Import/Includes
-                          </label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" />
-                          <label class="form-check-label" for="Q62">
-                            Language keywords
-                          </label>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
+                  </p>
 
-                      <td>
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" />
-                          <label class="form-check-label" for="Q63">
-                            Generating templates for loops/conditions
-                          </label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" />
-                          <label class="form-check-label" for="Q64">
-                            Method/Function invocations
-                          </label>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
+                  <p class="title mt-4"><strong>Please rate how useful the code recommendation would have been in a real usage scenario:</strong></p>
 
-                      <td>
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" />
-                          <label class="form-check-label" for="Q65">
-                            Generating class methods (setter/getter)
-                          </label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" />
-                          <label class="form-check-label" for="Q66">
-                            Generating class methods (to comply with an interaface)
-                          </label>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
+                  <table class="table" id="useful">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col" style="width: 100px;">Slightly Useful </th>
+                        <th scope="col" style="width: 100px;">Useful</th>
+                        <th scope="col" style="width: 100px;">Very Useful </th>
 
-                      <td>
-                        <div class="text-left">
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="description">
+                          <pre>path=targetStream.Path</pre>
+                        </td>
+                        <td>
+                          <input class="form-check-input" type="radio" name="useful" />
+                        </td>
+                        <td>
+                          <input class="form-check-input" type="radio" name="useful" />
+                        </td>
+                        <td>
+                          <input class="form-check-input" type="radio" name="useful" />
+                        </td>
 
-                          <input class="form-check-input" type="checkbox" name="exampleForm" />
-                          <label class="form-check-label" for="Q67">
-                            Identifiers (e.g., variable/field/parameter/method names)
-                          </label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" />
-                          <label class="form-check-label" for="Q68">
-                            Searching APIs
-                          </label>
-                        </div>
-                      </td>
+                      </tr>
 
-                    </tr>
+                    </tbody>
+                  </table>
 
-                    <tr>
+                </div>
+                <hr />
 
-                      <td>
-                        <div class="text-left">
-                          <input class="form-check-input" type="checkbox" name="exampleForm" />
-                          <label class="form-check-label" for="Q69">
-                            Generating template methods/functions
-                          </label>
-                        </div>
-                      </td>
-                      <td>
-
-                        <p class="input-group">
-                          <span class="form-check mb-2">
-                            <input class="form-check-input" type="checkbox" name="exampleForm" />
-                            <label class="form-check-label" for="Q610">
-                              Other (comma separated)
-                            </label>
-                          </span>
-                          <span class="form-box"><input type="text" class="form-control" aria-label="..."></span>
-                        </p>
-
-
-
-                      </td>
-                    </tr>
-
-
-                  </tbody>
-                </table>
-
-              </div>
-
-
-              <hr />
-
-              <!-- 
+                <!-- 
 
                 QUESTION 7
 
               -->
-              <div class="question">
+                <div class="question">
 
-                <p class="title"><strong>Q7: Please rate the code recommender capabilities of the tools/IDEs
-                    you use
-                    accordingly to the following dimensions:</strong></p>
+                  <p class="title"><strong>Q7: Please indicate your level of agreement to the following claims for your
+                      selected suggestion:</strong>
+                  <pre>path=targetStream.Path</pre>
+                  </p>
 
-                <table class="table" id="capabilities">
-                  <thead>
-                    <tr>
-                      <th scope="col"></th>
-                      <th scope="col" style="width: 100px;">Low </th>
-                      <th scope="col" style="width: 100px;">Medium</th>
-                      <th scope="col" style="width: 100px;">High </th>
-                      <th scope="col" style="width: 100px;">Not Sure</th>
+                  <div> Select <em>"not applicable"</em> in case the specific claim cannot be evaluated for the shown recommendation.</div>
 
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="description"><b>Coverage of the recommendation</b>: how different are the coding scenarios in which the
-                        code
-                        recommender is able to provide support. For example, a code completion tool able to recommend
-                        variable names and method calls has a higher coverage as compared to a technique only able to
-                        recommend method calls.</td>
-                      <td>
-                          <input class="form-check-input" type="radio" name="coverage" />
-                      </td>
-                      <td>
-                          <input class="form-check-input" type="radio" name="coverage" />
-                      </td>
-                      <td>
-                          <input class="form-check-input" type="radio" name="coverage" />
-                      </td>
-                      <td>
-                          <input class="form-check-input" type="radio" name="coverage" />
-                      </td>
-                    </tr>
+                  <table class="table" id="claims">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col" style="width: 100px;">Strongly disagree </th>
+                        <th scope="col" style="width: 100px;">Disagree</th>
+                        <th scope="col" style="width: 100px;">Neutral </th>
+                        <th scope="col" style="width: 100px;">Agree </th>
+                        <th scope="col" style="width: 100px;">Strongly agree </th>
+                        <th scope="col" style="width: 100px;">Not applicable </th>
 
-                    <tr>
-                      <td class="description"><b>Accuracy of the recommendation</b>: how likely it is that the code recommended is correct.
-                      </td>
-                      <td>
-                          <input class="form-check-input" type="radio" name="accuracy" />
-                      </td>
-                      <td>
-                          <input class="form-check-input" type="radio" name="accuracy" />
-                      </td>
-                      <td>
-                          <input class="form-check-input" type="radio" name="accuracy" />
-                      </td>
-                      <td>
-                          <input class="form-check-input" type="radio" name="accuracy" />
-                      </td>
-                    </tr>
+                      </tr>
+                    </thead>
 
-                    <tr>
-                      <td class="description"><b>Usability of the recommendation</b>: how friendly the user interface is.</td>
-                      <td>
-                          <input class="form-check-input" type="radio" name="usability" />
-                      </td>
-                      <td>
-                          <input class="form-check-input" type="radio" name="usability" />
-                      </td>
-                      <td>
-                          <input class="form-check-input" type="radio" name="usability" />
-                      </td>
-                      <td>
-                          <input class="form-check-input" type="radio" name="usability" />
-                      </td>
-                    </tr>
+                  </table>
 
-                  </tbody>
-                </table>
+                </div>
 
+                <hr />
 
-              </div>
-
-              <hr />
-
-              <!-- 
+                <!-- 
 
                 QUESTION 8
 
               -->
-              <div class="question">
+                <div class="question">
 
-                <p class="title"><strong>Q8: concerning the three previous dimensions, what
-                    <b>improvements</b> would you like to see, such as code recommendation features of the
-                    tool/IDE?</strong></p>
+                  <p class="title"><strong>Q8: Please indicate your level of agreement to the following claims for the
+                      following (random) suggestion:</strong>
+                  <pre> urllib.request.URLopener()</pre>
+                  </p>
 
-                <p class="text-left">
-                  <b>Coverage of the recommendation</b>: how different are the coding scenarios in which the code
-                  recommender is able to provide support. For example, a code completion tool able to recommend
-                  variable names and method calls has a higher coverage as compared to a technique only able to
-                  recommend method calls.
-                </p>
+                  <div> Select "<em>Not applicable</em>" in case the specific claim cannot be evaluated for the shown
+                    recommendation.</div>
 
-                <p class="text-left">
-                  <input type="text" class="form-control fullsize" aria-label="...">
+                  <table class="table" id="claims2">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col" style="width: 100px;">Strongly disagree </th>
+                        <th scope="col" style="width: 100px;">Disagree</th>
+                        <th scope="col" style="width: 100px;">Neutral </th>
+                        <th scope="col" style="width: 100px;">Agree </th>
+                        <th scope="col" style="width: 100px;">Strongly agree </th>
+                        <th scope="col" style="width: 100px;">Not applicable </th>
 
-                </p>
-                <div class="margintop"></div>
-                <p class="text-left">
-                  <b>Accuracy of the recommendation</b>: how likely it is that the code recommended is correct.
-                </p>
+                      </tr>
+                    </thead>
 
-                <p class="text-left">
-                  <input type="text" class="form-control fullsize" aria-label="...">
+                  </table>
 
-                </p>
-                <div class="margintop"></div>
-
-                <p class="text-left">
-                  <b>Usability of the recommendation</b>: how friendly the user interface is.
-                </p>
-
-                <p class="text-left">
-                  <input type="text" class="form-control fullsize" aria-label="...">
-
-                </p>
-
-                </hr>
-
-              </div>
-
-              <hr />
-
-              <!-- 
-
-                QUESTION 9
-
-              -->
-              <div class="question">
-
-                <p class="title"><strong>Q9: Which are the most important characteristics of the code
-                    recommendation that strongly impact its usefulness (and, as a consequence, the likelihood that you
-                    will accept and use the recommendation)? </strong></br>Please list at least three of them sorted by
-                  importance,
-                  accompanying each one with a short explanation. Just a note: Use "Correctness" if you want to refer
-                  to
-                  the fact that the recommended code must be bug-free, use "Accuracy" if you want to indicate that the
-                  recommendations received are usually precise and match what the developer wants to write.
-                </p>
-
-                <p class="text-left">
-                  <input type="text" class="form-control fullsize" aria-label="...">
-
-                </p>
-
-              </div>
-
-              <hr />
-
-              <!-- 
-
-                QUESTION 10
-
-              -->
-              <div class="question">
-
-                <p class="title"><strong>Q10: Concerning the accuracy of the recommendation. Let’s assume
-                    that
-                    the code recommender tool you use provides &mdash; for the code you are writing &mdash; a list of
-                    possible
-                    recommendations sorted by likelihood of being relevant (i.e., the most relevant on top). How many of
-                    these recommendations would you be willing to read in order to find the right one?</strong></br>
-                  For example, TOP 3 means that the correct recommendation is within these three recommendations.
-                  Otherwise, you believe it’s faster just manually to type the code.
-                </p>
-
-
-                <div class="form-check mb-2">
-                  <input class="form-check-input" type="radio" name="topk" />
-                  <label class="form-check-label" for="tp1">
-                    TOP 1
-                  </label>
-                </div>
-                <div class="form-check mb-2">
-                  <input class="form-check-input" type="radio" name="topk" />
-                  <label class="form-check-label" for="tp1">
-                    TOP 3
-                  </label>
                 </div>
 
-                <div class="form-check mb-2">
-                  <input class="form-check-input" type="radio" name="topk" />
-                  <label class="form-check-label" for="tp1">
-                    TOP 5
-                  </label>
-                </div>
-
-                <div class="form-check mb-2">
-                  <input class="form-check-input" type="radio" name="topk" />
-                  <label class="form-check-label" for="tp1">
-                    TOP 10
-                  </label>
-                </div>
-
-                <div class="form-check mb-2">
-                  <input class="form-check-input" type="radio" name="topk" />
-                  <label class="form-check-label" for="tp1">
-                    Every item in the list
-                  </label>
-                </div>
-
-              </div>
-
-              <hr />
-
-              <!-- 
-
-                QUESTION 11
-
-              -->
-              <div class="question">
-
-                <p class="title"><strong>Q11: Which of the following characteristics of a code
-                    recommendation
-                    would strongly impact its usefulness (and, as a consequence, the likelihood that you will accept and
-                    use the recommendation)? Select the most relevant categories for you.
-                  </strong>
-
-
-
-
-                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
-                    id="checkbox_characteristics" /> <label class="form-check-label"
-                    for="Q111"><strong>Characteristics of recommended code &gt; Code quality &gt; High
-                      readability
-                      and understandability &gt; Concise Code </strong><br /> The recommended code must be as short and
-                    simple as possible. </label> </div>
-                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
-                    id="checkbox_characteristics" /> <label class="form-check-label"
-                    for="Q112"><strong>Characteristics of recommended code &gt; Code quality &gt; Correctness
-                    </strong><br /> The recommended code must be bug-free. </label> </div>
-                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
-                    id="checkbox_characteristics" /> <label class="form-check-label"
-                    for="Q1114"><strong>Awareness
-                      &gt; Developers' knowledge </strong><br /> If multiple recommendations are possible, the one using
-                    code that is more familiar to the developer must be used (\eg the code using APIs already used in
-                    the
-                    past by the developer receiving the recommendation). </label> </div>
-                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
-                    id="checkbox_characteristics" /> <label class="form-check-label"
-                    for="Q113"><strong>Characteristics of recommended code &gt; Code quality &gt; High
-                      readability
-                      and understandability </strong><br /> The recommended code must be readable (\eg avoid very long
-                    statements, adopt indentation) and easy to understand.</label> </div>
-                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
-                    id="checkbox_characteristics" /> <label class="form-check-label"
-                    for="Q114"><strong>Characteristics of recommended code &gt; Code quality &gt; High
-                      reusability
-                    </strong><br />The recommended code is easy to reuse. This is particularly relevant for recommender
-                    systems suggesting code components at higher granularity (e.g., entire methods)</label> </div>
-                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
-                    id="checkbox_characteristics" /> <label class="form-check-label"
-                    for="Q115"><strong>Characteristics of recommended code &gt; Provides additional information
-                      &gt;
-                      Documentation &gt; Commented code </strong><br /> The recommended code features comments
-                    documenting
-                    the statements. </label> </div>
-                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
-                    id="checkbox_characteristics" /> <label class="form-check-label"
-                    for="Q116"><strong>Characteristics of recommended code &gt; Adaptive &gt; Developer's
-                      coding
-                      style </strong><br /> The recommended code is adapted to the developer's coding style (e.g., using
-                    extra parenthesis to better format code if this is a practice frequently performed by the
-                    developer).</label> </div>
-                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
-                    id="checkbox_characteristics" /> <label class="form-check-label"
-                    for="Q117"><strong>Characteristics of recommended code &gt; Code quality &gt; Meets best
-                      coding
-                      practices &gt; Meets company/client standards </strong><br /> The recommended code can be
-                    configured
-                    to meet specific best coding practices defined by the company/client (e.g., if variables are named
-                    with camelCase, the same convention must be adopted in the recommended code).</label> </div>
-                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
-                    id="checkbox_characteristics" /> <label class="form-check-label"
-                    for="Q118"><strong>Characteristics of recommended code &gt; Structural characteristics &gt;
-                      Precise typing information </strong><br /> The recommended code can be configured to meet specific
-                    best coding practices defined by the company/client (e.g., if variables are named with camelCase,
-                    the
-                    same convention must be adopted in the recommended code).</label> </div>
-                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
-                    id="checkbox_characteristics" /> <label class="form-check-label"
-                    for="Q119"><strong>Usability
-                      &gt; High responsiveness </strong><br /> The responsiveness of the code recommendation system in
-                    terms
-                    of time needed to generate a recommendation. The recommender is responsive, not causing lagging
-                    while
-                    coding.</label> </div>
-                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
-                    id="checkbox_characteristics" /> <label class="form-check-label"
-                    for="Q1010"><strong>Characteristics of recommended code &gt; Adaptive &gt; Coding context
-                      &gt;
-                      Identifier names </strong><br /> The recommended code is adapted to the context of the
-                    recommendation by using the same variable names of the code it completes when possible.</label>
-                </div>
-                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
-                    id="checkbox_characteristics" /> <label class="form-check-label"
-                    for="Q1111"><strong>Characteristics of recommended code &gt; Code quality &gt; Correctness
-                      &gt;
-                      Correct syntax </strong><br /> The recommended must not introduce syntax errors.</label> </div>
-                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
-                    id="checkbox_characteristics" /> <label class="form-check-label"
-                    for="Q1112"><strong>Characteristics of recommended code &gt; Code quality &gt; High
-                      readability
-                      and understandability &gt; Step-by-step solution </strong><br /> In case the recommended code
-                    spans
-                    across many statements, the code is divided into multiple chunks (by using a blank line), each one
-                    responsible for a sub-task. </label> </div>
-                <div class="form-check mb-2"> <input class="form-check-input" type="checkbox" name="exampleForm"
-                    id="checkbox_characteristics" /> <label class="form-check-label"
-                    for="Q1113"><strong>Characteristics of recommended code &gt; Code quality &gt; Correctness
-                      &gt;
-                      Bug/Vulnerability free </strong><br /> The recommended code is does not introduce bugs and/or
-                    vulnerabilities. </label> </div>
-
-                </p>
-
+                <hr />
 
             </form>
           </div>
@@ -1076,11 +595,13 @@
 
   <footer class="footer mt-auto py-3 bg-light">
     <div class="container">
-      <span class="text-muted">Place sticky footer content here.</span>
+      <span class="text-muted">Replication package for <em>Source Code Recommender Systems:
+          Practitioners' Wishes vs State-of-the-art</em>.</span>
     </div>
   </footer>
 
-  <script src="../js/survey1.js"></script>
+  <script src="../js/survey2.js"></script>
+  <script>hljs.highlightAll();</script>
 
 
 </body>
