@@ -1,118 +1,344 @@
-<!doctype html>
-<html lang="en" class="h-100">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <style>
+      #redtext{
+          color: #f4623a;
+          font-weight: bold;
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <meta name="generator" content="">
-  <title>Code-recommender - replication package</title>
+      }
 
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/">
+      #redtextbig{
+          color: #f4623a;
+          display: inline-block;
+          font-size: 32px;
+          font-weight: bold;
 
-  <!-- bootstrap 5.0.2 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+      }
 
-  <!-- Custom styles for this template -->
-  <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+      #CV-box{
+          margin-top: 30px;
+      }
 
-  <!-- Custom styles for this page -->
-  <link href="css/index.css" rel="stylesheet">
+      #CV{
+          font-size: 18px;
+          font-weight: bold;
+          border: 2px solid white;
+          padding: 10px;
+          color: white;
+      }
 
-</head>
+      #CV:hover {
+    background: #fff;
+    color: #8c363e;
+    }
 
-<body class="d-flex flex-column h-100">
+      </style>
+    <title>Matteo Ciniselli</title>
+<!--
+Reflux Template
+https://templatemo.com/tm-531-reflux
+-->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-  <header>
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <div class="container-fluid">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+  </head>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
+            </div>
+            <div class="author-content">
+              <h4>Matteo Ciniselli</h4>
+              <span>Phd Student</span>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">Education and Professional Experience</a></li>
+                <li><a href="#section3">Publications</a></li>
+                <li><a href="#section4">Contact Me</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="https://it-it.facebook.com/matteo.ciniselli"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/matteociniselli"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="https://it.linkedin.com/in/matteo-ciniselli-9b38b9b1"><i class="fa fa-linkedin"></i></a>
+                </li>
+ <!--                <li>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-rss"></i></a>
+                </li> -->
+              </ul>
+            </div>
+            <div id="CV-box">
+                  <a href="resources/CV.pdf" download="CV_Matteo_Ciniselli.pdf" id="CV">
+                  Download CV
+                </a>
+            </div>
 
-
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="study/survey.html">Survey Questions</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="study/literaturesurvey.html">Characteristics from Literature</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="study/demographic.html">Demographics</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="study/tag.html">Participants' Answers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="study/taxonomy.html">Taxonomy</a>
-            </li>
-
-          </ul>
-          <!--
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>-->
+            <div class="copyright-text">
+              <p>Copyright 2019 Reflux Design</p>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-  </header>
 
-  <!-- Begin page content -->
-  <main class="flex-shrink-0">
-    <div class="container">
-
-
-      <div class="mx-0 mx-sm-auto bg-white">
-        <div class="card">
-          <div class="card-body">
-
-
-
-            <h1 class="mt-1 text-center">Source Code Recommender Systems: </br>The Practitioners' Perspective
-            </h1>
-            <p class="col-md-12 fs-5 mt-5 px-4" style="text-align: justify;">
+      <section class="section about-me" data-section="section1">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Home</h2>
+            <div class="line-dec"></div>
+            <span>
+              </br>
+              Hello, my name is </br> </br> <div id = "redtextbig">Matteo Ciniselli </div> </br> </br>
+              I'm a PhD student at the <span id="redtext">Università della Svizzera Italiana </span> in Lugano. </br> </br>
+              I'm part of the <span id = "redtext"> SEART </span> research group led by <span id ="redtext">Gabriele Bavota</span> and I'm working on the <span id="redtext">DEVINTA</span> project. </br> </br>
+              My research aims at using Deep Learning Models to help developer write code.
+            </span>
+          </div>
+      </section>
 
 
+    <!-- ======= Resume Section ======= -->
+    <section class="section resume" data-section="section2" >
 
+      <div class="container">
 
-The <b>automatic generation of source code</b> is one of the long-lasting dreams in software engineering research. Several techniques have been proposed to speed up the writing of new code. For example, code completion techniques can recommend to developers the next few tokens they are likely to type, while retrieval-based approaches can suggest code snippets relevant for the task at hand. Also, <b>deep learning</b> has been used to automatically generate code statements starting from a natural language description. While research in this field is very active, there is no study investigating what the users of code recommender systems (i.e., software practitioners) actually need from these tools. 
-</br> </br> We present a study involving 80 software developers to investigate the characteristics of code recommender systems they consider important. The output of our study is a <a href="study/taxonomy.html">taxonomy</a> of 70 "<em>requirements</em>" that should be considered when designing code recommender systems. For example, developers would like the recommended code to use the same coding style of the code under development. Also, code recommenders being "<em>aware</em>" of the developers' knowledge (e.g., what are the framework/libraries they already used in the past) and able to customize the recommendations based on this knowledge would be appreciated by practitioners. The taxonomy output of our study points to a wide set of future research directions for code recommenders.</br>
-
-
-            </p>
-
+         <div class="section-heading">
+            <h2>Education and Professional Experience</h2>
+            <div class="line-dec"></div>
           </div>
 
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>PhD in Computer Science</h4>
+              <h5>May 2020 - Present</h5>
+              <p><em>Università della Svizzera Italiana, Lugano</em></p>
+              <p>During my PhD, I'm investigating the usage of Deep Learning models to automatically generate code.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Master in High Apprenticeship in Analytics and Business Intelligence</h4>
+              <h5>July 2015 - July 2017</h5>
+              <p><em>Polytechnic of Milan, Milan</em></p>
+              <p>During these two years, I studied topics related to Big Data and Machine Learning. I released a tool using MondoDB and NodeJS able to suggest the choice of an order for a tender</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Master Degree in Mathematical Engineering, Statistical Address</h4>
+              <h5>October 2012 - April 2015</h5>
+              <p><em>Polytechnic of Milan, Milan</em></p>
+              <p>During these years, I studied statistics at 360 degrees, enriching my knowledge with Optimization, Data Analysis and Programming courses.</p>
+            </div>
+
+
+            <div class="resume-item">
+              <h4>Bachelor's Degree in Mathematical Engineering</h4>
+              <h5>September 2009 - September 2012</h5>
+              <p><em>Polytechnic of Milan, Milan</em></p>
+              <p>During my Bachelor's Degree, I studied Mathematical Analysis, Statistics, Computer Science, Physics and Probability.</p>
+            </div>
+             
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+
+            <div class="resume-item">
+              <h4>Data Scientist @ Machine Learning Center Of Excellence</h4>
+              <h5>March 2019 - April 2020</h5>
+              <p><em>Accenture S.p.A., Milan</em></p>
+              <p>I realized different tools for Computer Vision released in portable services, using Flask with HTML and CSS. Creation of a NodeJS server that uses DialogFlow API to understand the intent of the sentences and allows the user to interact vocally with the washing machine. Creation of a chatbot deployed in different Docker containers.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>.NET Developer</h4>
+              <h5>October 2017 - February 2019</h5>
+              <p><em>Aglea S.r.L., Milan</em></p>
+              <p>Realization of internal tools in C# and study of authorization security in SAP. Production of a tool to manage activities in my company (purchasing, invoicing, ..) based on a SQL database.</p>
+            </div>
+
+
+            <div class="resume-item">
+              <h4>Business Intelligence Consultant</h4>
+              <h5>January 2015 - September 2017</h5>
+              <p><em>NextInt S.a.s., Milan</em></p>
+              <p>Use of RapidMiner and R to solve different optimization problems.
+              Generation of dashboards with QlikView to help customers seeing their data in order to take business decisions.</p>
+            </div>
+
+
         </div>
+
       </div>
+    </section><!-- End Resume Section -->
 
+      
+      <section class="section Publications" data-section="section3">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Publications</h2>
+            <div class="line-dec"></div>
+            <span
+              >  
+                <a href="https://arxiv.org/abs/2103.07115" target="_blank"><h4 class="mb-3 font-weight-bold"><span id = "redtextbig">An Empirical Study on the Usage of BERT Models for Code Completion</span></h4></a>
+                <p><span class="font-weight-bold"> M. Ciniselli</span>, N. Cooper, L. Pascarella, D. Poshyvanyk, M. Di Penta, G. Bavota</p>
+                  <p>Mining Software Repositories (<span class="font-weight-bold">MSR 2021</span>), 12 pages</p>
+
+              </span>
+            
+            <span>  
+                <a href="https://arxiv.org/abs/2108.01585" target="_blank"><h4 class="mb-3 font-weight-bold"><span id = "redtextbig">An Empirical Study on the Usage of Transformer Models for Code Completion</span></h4></a>
+                <p><span class="font-weight-bold"> M. Ciniselli</span>, N. Cooper, L. Pascarella, A.Mastropaolo, E. Aghajani, D. Poshyvanyk, M. Di Penta, G. Bavota</p>
+                  <p>IEEE Transactions on Software Engineering (<span class="font-weight-bold">TSE 2021</span>), 20 pages</p>
+
+
+              </span
+            >
+
+            <span>  
+                <a href="https://arxiv.org/abs/2204.06894" target="_blank"><h4 class="mb-3 font-weight-bold"><span id = "redtextbig">To What Extent do Deep Learning-based Code Recommenders Generate Predictions by Cloning Code from the Training Set?</span></h4></a>
+                <p><span class="font-weight-bold"> M. Ciniselli</span>, L. Pascarella, G. Bavota</p>
+                  <p>Mining Software Repositories (<span class="font-weight-bold">MSR 2022</span>), 12 pages</p>
+
+
+              </span
+            >
+
+
+            <span>  
+                <a href="https://arxiv.org/abs/2204.06894" target="_blank"><h4 class="mb-3 font-weight-bold"><span id = "redtextbig">Source Code Recommender Systems: The Practitioners' Perspective</span></h4></a>
+                <p><span class="font-weight-bold"> M. Ciniselli</span>, L. Pascarella, E Aghajani, S Scalabrino, R Oliveto, G Bavota</p>
+                  <p>International Conference on Software Engineering (<span class="font-weight-bold">ICSE 2023</span>), to appear</p>
+
+
+              </span
+            >
+
+
+            <span>  
+                <a href="https://arxiv.org/abs/2204.06894" target="_blank"><h4 class="mb-3 font-weight-bold"><span id = "redtextbig">To What Extent do Deep Learning-based Code Recommenders Generate Predictions by Cloning Code from the Training Set?</span></h4></a>
+                <p>A Mastropaolo, L Pascarella, E Guglielmi,<span class="font-weight-bold"> M. Ciniselli</span>, S Scalabrino, R Oliveto, G Bavota</p>
+                  <p>International Conference on Software Engineering (<span class="font-weight-bold">ICSE 2023</span>), to appear</p>
+
+              </span
+            >
+
+
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="section contact-me" data-section="section4">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Contact Me</h2>
+            <div class="line-dec"></div>
+            <span id = "contact">
+             </br> </br>        
+             </br> </br>          
+
+            Istitutional Email: <em>matteo.ciniselli[at]usi[dot]ch</em></br></br>
+            Office: <em>Campus EST, Section D, Office D3.10 (Level 3), Via la Santa 1, 6962 Viganello</em>
+            </span>
+             </br> </br>          
+
+            <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11083.979098509322!2d8.9606248!3d46.0112966!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5533cde4ba34bd3c!2sFaculty%20of%20Informatics%20(USI)!5e0!3m2!1sit!2sch!4v1610460275739!5m2!1sit!2sch" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+          </div>
+        </div>
+      </section>
     </div>
 
-    </div>
-  </main>
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <footer class="footer mt-auto py-3 bg-light">
-    <div class="container">
-      <span class="text-muted">Replication package for <em>Source Code Recommender Systems: The Practitioners' Perspective</em>.</span>
-    </div>
-  </footer>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
 
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
 
-</body>
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
 
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
 </html>
